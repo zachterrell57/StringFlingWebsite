@@ -1,0 +1,16 @@
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$purple: rgba(89, 43, 130, 1);
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@import "_global";
+@import "_nav.scss";
