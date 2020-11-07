@@ -71,7 +71,6 @@ nav {
   min-height: 10vh;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: gray;
 }
 
 nav img {
