@@ -68,10 +68,10 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  min-height: 10vh;
+  min-height: 17vh;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: gray;
+  background-color: transparent;
 }
 
 nav img {
@@ -100,5 +100,18 @@ nav ul {
 nav ul a {
   color: #592b82;
   margin: 0rem 5.2rem;
+}
+
+.background-image {
+  min-height: 100vh;
+  background-image: url("..//img/Anderson.jpg");
+  background-size: 100vh;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  min-height: 83vh;
+  width: 100%;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

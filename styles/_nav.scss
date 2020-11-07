@@ -4,10 +4,10 @@
 
 nav {
   @include flex(space-between, center, row);
-  min-height: 10vh;
+  min-height: 17vh;
   flex-wrap: wrap;
 
-  background-color: gray;
+  background-color: transparent;
   img {
     height: 17vh;
   }
