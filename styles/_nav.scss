@@ -1,9 +1,22 @@
 .main-head {
-  width: 95%;
-  margin: 0 0 0 auto;
+  margin: auto;
 }
 
 nav {
-  display: flex;
-  flex-direction: row;
+  @include flex(space-between, center, row);
+  min-height: 10vh;
+  flex-wrap: wrap;
+
+  background-color: gray;
+  img {
+    height: 17vh;
+  }
+  ul {
+    @include flex(flex-end, center, row);
+    flex: 1 1 20rem;
+    a {
+      color: $purple;
+      margin: 0rem 5.2rem;
+    }
+  }
 }
