@@ -7,7 +7,10 @@ nav {
   min-height: 17vh;
   flex-wrap: wrap;
 
+<<<<<<< HEAD
   background-color: transparent;
+=======
+>>>>>>> c082895e2c40e4506c264ccd0f7b19c7347ac359
   img {
     height: 17vh;
   }
@@ -19,4 +22,13 @@ nav {
       margin: 0rem 5.2rem;
     }
   }
+}
+
+#selected {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid $purple;
+}
+
+.home-links {
+  color: white;
 }
