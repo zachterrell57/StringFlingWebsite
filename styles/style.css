@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 7.2rem;
 }
 
 li,
@@ -28,11 +28,11 @@ p {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 4.8rem;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 3.6rem;
   font-weight: normal;
 }
 
@@ -114,13 +114,83 @@ nav ul a {
 .background-image {
   min-height: 100vh;
   background-image: url("..//img/Anderson.jpg");
-  background-size: 100vh;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gradient {
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .hero {
   min-height: 83vh;
   width: 100%;
   margin: auto;
+}
+
+.hero .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 60vh;
+}
+
+.hero .text .left-side {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  text-align: center;
+}
+
+.hero .text .right-side {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  text-align: center;
+}
+
+.register-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-height: 83vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.register-body .glasses-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.register-body img {
+  width: 100%;
+}
+
+.register-body .register-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
 }
 /*# sourceMappingURL=style.css.map */
