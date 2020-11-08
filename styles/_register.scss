@@ -7,8 +7,20 @@
   }
   img {
     width: 100%;
+    border-radius: 20px;
+    box-shadow: -20px 20px $purple;
   }
   .register-text {
     flex: 1 1 40rem;
+    padding: 0rem 20rem;
+    h1 {
+      font-weight: 600;
+      color: $purple;
+    }
+    p {
+      padding: 5rem 0rem;
+    }
+    button {
+    }
   }
 }
