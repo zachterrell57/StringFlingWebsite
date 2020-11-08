@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -38,7 +38,8 @@ h3 {
 
 h4,
 h5 {
-  font-size: 2rem;
+  font-size: 2.4rem;
+  font-weight: 500;
 }
 
 ul {
@@ -59,18 +60,18 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   min-height: 17vh;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: transparent;
 }
 
@@ -83,18 +84,18 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 20rem;
-  flex: 1 1 20rem;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
 }
 
 nav ul a {
@@ -109,6 +110,47 @@ nav ul a {
 
 .home-links {
   color: white;
+}
+
+footer {
+  width: 100%;
+  background-color: #565656;
+  color: white;
+  padding: 5rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer a {
+  color: white;
+  font-size: 2.4rem;
+}
+
+footer #Orchestra {
+  padding-bottom: 2rem;
+}
+
+footer .footer-icons #facebook {
+  margin: 0rem 5rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+footer .footer-icons #website {
+  margin: 0rem 5rem;
+  height: 5rem;
+  width: 5rem;
 }
 
 .background-image {
@@ -126,6 +168,7 @@ nav ul a {
   min-height: 83vh;
   width: 100%;
   margin: auto;
+  color: white;
 }
 
 .hero .text {
@@ -133,30 +176,46 @@ nav ul a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   min-height: 60vh;
+}
+
+.hero .text h1,
+.hero .text h2 {
+  font-weight: 400;
+  letter-spacing: 0.45rem;
 }
 
 .hero .text .left-side {
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 40rem;
-  flex: 1 1 40rem;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
   text-align: center;
+}
+
+.hero .text .left-side #TitleTextTop {
+  padding-right: 8rem;
+}
+
+.hero .text .left-side #TitleTextBottom {
+  padding-left: 9rem;
 }
 
 .hero .text .right-side {
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 40rem;
-  flex: 1 1 40rem;
-  text-align: center;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  text-align: left;
+  padding-left: 8rem;
+  padding-top: 9rem;
 }
 
 .register-body {
@@ -164,36 +223,77 @@ nav ul a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  max-height: 83vh;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 83vh;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .register-body .glasses-img {
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 40rem;
-  flex: 1 1 40rem;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  -webkit-transform: translateX(15rem);
+          transform: translateX(15rem);
+  height: 70%;
 }
 
 .register-body img {
   width: 100%;
   border-radius: 20px;
   -webkit-box-shadow: -20px 20px #592b82;
-  box-shadow: -20px 20px #592b82;
+          box-shadow: -20px 20px #592b82;
 }
 
 .register-body .register-text {
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 40rem;
-  flex: 1 1 40rem;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  padding: 0rem 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.register-body .register-text h1 {
+  font-weight: 600;
+  color: #592b82;
+}
+
+.register-body .register-text p {
+  padding: 2.5rem 0rem;
+}
+
+.register-body .register-text .register-button {
+  border-radius: 20px;
+  padding: 2rem 0rem;
+  font-size: 3.6rem;
+  background-color: white;
+  border: 0.4rem solid #592b82;
+}
+
+.register-body .register-text .register-button:hover {
+  background-color: #592b82;
+  color: white;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

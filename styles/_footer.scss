@@ -1,0 +1,26 @@
+footer {
+  width: 100%;
+  background-color: rgba(86, 86, 86, 1);
+  color: white;
+  padding: 5rem 3rem;
+  @include flex(space-between, center, row);
+  a {
+    color: white;
+    font-size: 2.4rem;
+  }
+  #Orchestra {
+    padding-bottom: 2rem;
+  }
+  .footer-icons {
+    #facebook {
+      margin: 0rem 5rem;
+      height: 5rem;
+      width: 5rem;
+    }
+    #website {
+      margin: 0rem 5rem;
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+}

@@ -1,9 +1,12 @@
 .register-body {
   @include flex(space-between, center, row);
-  max-height: 83vh;
+  min-height: 83vh;
   flex-wrap: wrap;
+  overflow: hidden;
   .glasses-img {
     flex: 1 1 40rem;
+    transform: translateX(15rem);
+    height: 70%;
   }
   img {
     width: 100%;
@@ -13,14 +16,29 @@
   .register-text {
     flex: 1 1 40rem;
     padding: 0rem 20rem;
+
+    @include flex(space-between, left, column);
+
     h1 {
       font-weight: 600;
       color: $purple;
     }
     p {
-      padding: 5rem 0rem;
+      padding: 2.5rem 0rem;
     }
-    button {
+
+    .register-button {
+      border-radius: 20px;
+      padding: 2rem 0rem;
+      font-size: 3.6rem;
+      //margin: 0rem 10rem;
+      background-color: white;
+      border: 0.4rem solid $purple;
+    }
+    .register-button:hover {
+      background-color: $purple;
+      color: white;
+      cursor: pointer;
     }
   }
 }

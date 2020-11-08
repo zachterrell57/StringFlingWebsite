@@ -11,15 +11,30 @@
   min-height: 83vh;
   width: 100%;
   margin: auto;
+  color: white;
+
   .text {
     @include flex(space-between, center, row);
+    h1,
+    h2 {
+      font-weight: 400;
+      letter-spacing: 0.45rem;
+    }
     .left-side {
       flex: 1 1 40rem;
       text-align: center;
+      #TitleTextTop {
+        padding-right: 8rem;
+      }
+      #TitleTextBottom {
+        padding-left: 9rem;
+      }
     }
     .right-side {
       flex: 1 1 40rem;
-      text-align: center;
+      text-align: left;
+      padding-left: 8rem;
+      padding-top: 9rem;
     }
 
     min-height: 60vh;
