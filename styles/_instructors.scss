@@ -1,0 +1,48 @@
+.info-text {
+  min-height: 83vh;
+  width: 90%;
+  margin: auto;
+
+  @include flex(space-between, center, column);
+
+  .Professionals {
+    .professionals-card-view {
+      .card {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        min-height: 70vh;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: black;
+
+        .img {
+          width: 2rem;
+          height: 2rem;
+        }
+
+        @include flex(space-between, center, row);
+      }
+    }
+  }
+
+  .Students {
+    .students-card-view {
+      .card {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        min-height: 70vh;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .img {
+          width: 2rem;
+          height: 2rem;
+        }
+
+        @include flex(space-between, center, column);
+      }
+    }
+  }
+}
