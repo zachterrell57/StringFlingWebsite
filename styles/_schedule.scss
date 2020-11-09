@@ -1,0 +1,12 @@
+.schedule-page {
+  @include flex(space-between, center, row);
+  min-height: 83vh;
+  .buttons {
+    @include flex(space-between, center, column);
+    flex: 1 1 20rem;
+  }
+  .events {
+    @include flex(space-between, center, column);
+    flex: 1 1 40rem;
+  }
+}
