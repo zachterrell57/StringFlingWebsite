@@ -25,24 +25,4 @@
       }
     }
   }
-
-  .Students {
-    .students-card-view {
-      .card {
-        width: 90%;
-        margin: auto;
-        display: flex;
-        min-height: 70vh;
-        align-items: center;
-        flex-wrap: wrap;
-
-        .img {
-          width: 2rem;
-          height: 2rem;
-        }
-
-        @include flex(space-between, center, column);
-      }
-    }
-  }
 }
