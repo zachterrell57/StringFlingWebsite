@@ -341,7 +341,7 @@ footer .footer-icons #website {
           flex: 1 1 40rem;
   -webkit-transform: translateX(15rem);
           transform: translateX(15rem);
-  height: 70%;
+  padding-bottom: 5rem;
 }
 
 .register-body img {
@@ -355,7 +355,9 @@ footer .footer-icons #website {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
-  padding: 0rem 20rem;
+  padding-right: 20rem;
+  padding-left: 15rem;
+  padding-bottom: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,34 +440,6 @@ footer .footer-icons #website {
 }
 
 .info-text .Professionals .professionals-card-view .card .img {
-  width: 2rem;
-  height: 2rem;
-}
-
-.info-text .Students .students-card-view .card {
-  width: 90%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 70vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.info-text .Students .students-card-view .card .img {
   width: 2rem;
   height: 2rem;
 }

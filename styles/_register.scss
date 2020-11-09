@@ -6,7 +6,7 @@
   .glasses-img {
     flex: 1 1 40rem;
     transform: translateX(15rem);
-    height: 70%;
+    padding-bottom: 5rem;
   }
   img {
     width: 100%;
@@ -15,7 +15,9 @@
   }
   .register-text {
     flex: 1 1 40rem;
-    padding: 0rem 20rem;
+    padding-right: 20rem;
+    padding-left: 15rem;
+    padding-bottom: 5rem;
 
     @include flex(space-between, left, column);
 
