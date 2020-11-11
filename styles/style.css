@@ -320,19 +320,18 @@ footer .footer-icons #website {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: (1fr)[2] 10vh;
-      grid-template-rows: repeat(2, 1fr) 10vh;
+  -ms-grid-rows: (1fr)[2] 30vh;
+      grid-template-rows: repeat(2, 1fr) 30vh;
       grid-template-areas: "text1 pic1" "pic2 text2" "regButton regButton";
   min-height: 83vh;
-  margin-bottom: 5vh;
   position: relative;
   overflow: hidden;
 }
 
-.register-body .glasses-img {
+.register-body .cello-img {
   -webkit-transform: translateX(12rem);
           transform: translateX(12rem);
-  padding-top: 13vh;
+  padding-top: 4vh;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: pic1;
@@ -349,9 +348,8 @@ footer .footer-icons #website {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: text1;
-  padding-right: 5vw;
-  padding-left: 8vw;
-  padding-bottom: 0vh;
+  padding-right: 1vw;
+  padding-left: 7vw;
 }
 
 .register-body .register-text h1 {
@@ -365,20 +363,21 @@ footer .footer-icons #website {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: text2;
-  padding: 0 10vh;
-  padding-bottom: 10vh;
+  padding: 0 8vh;
 }
 
-.register-body .glasses2-img {
-  -webkit-transform: translateX(-12rem);
-          transform: translateX(-12rem);
-  padding-top: 13rem;
+.register-body .bigOrchestra-img {
+  -webkit-transform: translateX(-13vw);
+          transform: translateX(-13vw);
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: pic2;
 }
 
-.register-body .glasses2-img img {
+.register-body .bigOrchestra-img img {
+  margin-top: 10vh;
+  height: 70%;
+  width: 120%;
   -webkit-box-shadow: 20px 20px #592b82;
           box-shadow: 20px 20px #592b82;
 }
@@ -389,7 +388,7 @@ footer .footer-icons #website {
   -ms-grid-column-span: 2;
   grid-area: regButton;
   border-radius: 20px;
-  margin: 0 35vw;
+  margin: 10vh 35vw;
   font-size: 3.6rem;
   background-color: white;
   border: 0.4rem solid #592b82;

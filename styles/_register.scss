@@ -1,18 +1,17 @@
 .register-body {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, 1fr) 10vh;
+  grid-template-rows: repeat(2, 1fr) 30vh;
   grid-template-areas:
     "text1 pic1"
     "pic2 text2"
     "regButton regButton";
   min-height: 83vh;
-  margin-bottom: 5vh;
   position: relative;
   overflow: hidden;
-  .glasses-img {
+  .cello-img {
     transform: translateX(12rem);
-    padding-top: 13vh;
+    padding-top: 4vh;
     grid-area: pic1;
   }
   img {
@@ -22,9 +21,8 @@
   }
   .register-text {
     grid-area: text1;
-    padding-right: 5vw;
-    padding-left: 8vw;
-    padding-bottom: 0vh;
+    padding-right: 1vw;
+    padding-left: 7vw;
 
     h1 {
       font-weight: 600;
@@ -35,21 +33,23 @@
   }
   .register-online-text {
     grid-area: text2;
-    padding: 0 10vh;
-    padding-bottom: 10vh;
+    padding: 0 8vh;
   }
-  .glasses2-img {
-    transform: translateX(-12rem);
-    padding-top: 13rem;
+  .bigOrchestra-img {
+    transform: translateX(-13vw);
+    //padding-top: 20vh;
     grid-area: pic2;
     img {
+      margin-top: 10vh;
+      height: 70%;
+      width: 120%;
       box-shadow: 20px 20px $purple;
     }
   }
   .register-button {
     grid-area: regButton;
     border-radius: 20px;
-    margin: 0 35vw;
+    margin: 10vh 35vw;
     font-size: 3.6rem;
     background-color: white;
     border: 0.4rem solid $purple;
