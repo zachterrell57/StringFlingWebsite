@@ -322,7 +322,7 @@ footer .footer-icons #website {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: (1fr)[2] 10vh;
       grid-template-rows: repeat(2, 1fr) 10vh;
-      grid-template-areas: "text1 pic1" ". ." "regButton regButton";
+      grid-template-areas: "text1 pic1" "pic2 text2" "regButton regButton";
   min-height: 83vh;
   margin-bottom: 5vh;
   position: relative;
@@ -330,12 +330,9 @@ footer .footer-icons #website {
 }
 
 .register-body .glasses-img {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
-  -webkit-transform: translateX(15rem);
-          transform: translateX(15rem);
-  padding-bottom: 5rem;
+  -webkit-transform: translateX(12rem);
+          transform: translateX(12rem);
+  padding-top: 13vh;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: pic1;
@@ -352,34 +349,38 @@ footer .footer-icons #website {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: text1;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
-  padding-right: 10rem;
-  padding-left: 15rem;
-  padding-bottom: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding-right: 5vw;
+  padding-left: 8vw;
+  padding-bottom: 0vh;
 }
 
 .register-body .register-text h1 {
   font-weight: 600;
   color: #592b82;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
 }
 
-.register-body .register-text p {
-  padding: 2.5rem 0rem;
+.register-body .register-online-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: text2;
+  padding: 0 10vh;
+  padding-bottom: 10vh;
+}
+
+.register-body .glasses2-img {
+  -webkit-transform: translateX(-12rem);
+          transform: translateX(-12rem);
+  padding-top: 13rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: pic2;
+}
+
+.register-body .glasses2-img img {
+  -webkit-box-shadow: 20px 20px #592b82;
+          box-shadow: 20px 20px #592b82;
 }
 
 .register-body .register-button {

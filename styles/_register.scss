@@ -4,16 +4,15 @@
   grid-template-rows: repeat(2, 1fr) 10vh;
   grid-template-areas:
     "text1 pic1"
-    ". ."
+    "pic2 text2"
     "regButton regButton";
   min-height: 83vh;
   margin-bottom: 5vh;
   position: relative;
   overflow: hidden;
   .glasses-img {
-    flex: 1 1 40rem;
-    transform: translateX(15rem);
-    padding-bottom: 5rem;
+    transform: translateX(12rem);
+    padding-top: 13vh;
     grid-area: pic1;
   }
   img {
@@ -23,19 +22,28 @@
   }
   .register-text {
     grid-area: text1;
-    flex: 1 1 40rem;
-    padding-right: 10rem;
-    padding-left: 15rem;
-    padding-bottom: 5rem;
-
-    @include flex(space-between, left, column);
+    padding-right: 5vw;
+    padding-left: 8vw;
+    padding-bottom: 0vh;
 
     h1 {
       font-weight: 600;
       color: $purple;
+      margin-top: 5vh;
+      margin-bottom: 3vh;
     }
-    p {
-      padding: 2.5rem 0rem;
+  }
+  .register-online-text {
+    grid-area: text2;
+    padding: 0 10vh;
+    padding-bottom: 10vh;
+  }
+  .glasses2-img {
+    transform: translateX(-12rem);
+    padding-top: 13rem;
+    grid-area: pic2;
+    img {
+      box-shadow: 20px 20px $purple;
     }
   }
   .register-button {
