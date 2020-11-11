@@ -1,12 +1,20 @@
 .register-body {
-  @include flex(space-between, center, row);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr) 10vh;
+  grid-template-areas:
+    "text1 pic1"
+    ". ."
+    "regButton regButton";
   min-height: 83vh;
-  flex-wrap: wrap;
+  margin-bottom: 5vh;
+  position: relative;
   overflow: hidden;
   .glasses-img {
     flex: 1 1 40rem;
     transform: translateX(15rem);
     padding-bottom: 5rem;
+    grid-area: pic1;
   }
   img {
     width: 100%;
@@ -14,8 +22,9 @@
     box-shadow: -20px 20px $purple;
   }
   .register-text {
+    grid-area: text1;
     flex: 1 1 40rem;
-    padding-right: 20rem;
+    padding-right: 10rem;
     padding-left: 15rem;
     padding-bottom: 5rem;
 
@@ -28,19 +37,18 @@
     p {
       padding: 2.5rem 0rem;
     }
-
-    .register-button {
-      border-radius: 20px;
-      padding: 2rem 0rem;
-      font-size: 3.6rem;
-      //margin: 0rem 10rem;
-      background-color: white;
-      border: 0.4rem solid $purple;
-    }
-    .register-button:hover {
-      background-color: $purple;
-      color: white;
-      cursor: pointer;
-    }
+  }
+  .register-button {
+    grid-area: regButton;
+    border-radius: 20px;
+    margin: 0 35vw;
+    font-size: 3.6rem;
+    background-color: white;
+    border: 0.4rem solid $purple;
+  }
+  .register-button:hover {
+    background-color: $purple;
+    color: white;
+    cursor: pointer;
   }
 }
