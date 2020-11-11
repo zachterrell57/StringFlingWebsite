@@ -40,50 +40,123 @@
       </div>
 
       <div class="card" id="cooper">
-        <div id="bio-pic-cooper"></div>
-        <div class="name">
-          <h3>Dr. Cora Cooper</h3>
-          <h4>Director</h4>
+        <div class="front">
+          <div id="bio-pic-cooper"></div>
+          <div class="name">
+            <h3>Dr. Cora Cooper</h3>
+            <h4>Director</h4>
+          </div>
+        </div>
+        <div class="back">
+          <p>
+            Dr. Cora Cooper has taught violin, viola, and chamber music at
+            K-State since 1990. Before that, she played in the Vermont, Austin
+            and Tallahassee Symphonies during and around her graduate school
+            years. While at K-State, Cooper also performed with the Atlanta
+            Baroque Orchestra and recorded the Loeffler “Quintet for Strings”
+            for NAXOS American Classics with the DaVinci Quartet. She has done a
+            great deal of research on women composers, and publishes music
+            (including the Violin Music by Women and Viola Music by Women
+            anthologies) though her company, Sleepy Puppy Press. Her puppy is a
+            miniature labradoodle.
+          </p>
         </div>
       </div>
 
       <div class="card" id="dirks">
-        <div id="bio-pic-dirks"></div>
-        <div class="name">
-          <h3>Dr. Rachel Dirks</h3>
-          <h4>Director</h4>
+        <div class="front">
+          <div id="bio-pic-dirks"></div>
+          <div class="name">
+            <h3>Dr. Rachel Dirks</h3>
+            <h4>Director</h4>
+          </div>
+        </div>
+        <div class="back">
+          <p>
+            Rachel Dirks, Director of Orchestral Studies, is an active
+            conductor, clinician, and educator. In addition to her work with the
+            KSU Symphony Orchestra, she teaches applied cello and string
+            education at K-State. Dr. Dirks holds cello performance degrees from
+            the University of Texas at Austin and Bethel College, and a Ph.D. in
+            music education, with an emphasis in orchestral conducting, from the
+            University of Kansas. As a guest conductor Dr. Dirks has been
+            invited to conduct orchestras throughout the United States,
+            including appearances in Kentucky, Oregon, New York, Illinois,
+            Missouri, Oklahoma, and throughout Kansas.
+          </p>
         </div>
       </div>
 
       <div class="card" id="ben">
-        <div id="bio-pic-ben"></div>
-        <div class="name">
-          <h3>Ben Jones-Hayes</h3>
-          <h4>Luthier</h4>
+        <div class="front">
+          <div id="bio-pic-ben"></div>
+          <div class="name">
+            <h3>Ben Jones-Hayes</h3>
+            <h4>Luthier</h4>
+          </div>
+        </div>
+        <div class="back">
+          <p>
+            Benjamin Jones-Hayes is a luthier and violin maker now based in
+            Fairfax, Virginia. He is also a classically trained violist who
+            often performs Irish fiddle, and teaches both violin and viola
+            lessons to private students. Jones-Hayes began his training as a
+            luthier in 2003, at The Loft Violin Shop in Columbus, Ohio. During
+            his apprenticeship, he first learned how to repair and restore
+            string instruments, and then began to work on making instruments. He
+            has furthered his training at the University of New Hampshire’s
+            Violin Craftsmanship Institute and the Massachusetts College of
+            Liberal Arts Violin Repair Workshop with Hans J. Nebel.
+          </p>
         </div>
       </div>
 
       <div class="card" id="heather">
-        <div id="bio-pic-heather"></div>
-        <div class="name">
-          <h3>Heather McCornack</h3>
-          <h4>Yoga Instructor</h4>
+        <div class="front">
+          <div id="bio-pic-heather"></div>
+          <div class="name">
+            <h3>Heather McCornack</h3>
+            <h4>Yoga Instructor</h4>
+          </div>
+        </div>
+        <div class="back">
+          <p>
+            Heather McCornack is a registered yoga teacher who specializes in
+            teaching yoga for musicians and yoga for people in eating disorder
+            recovery. She will complete her master’s degree from Kansas State
+            University this spring upon completion of her master’s report,
+            “Yoga, singing, and the singer.” Heather also teaches voice and
+            piano and works as a musical theatre voice coach and collaborative
+            pianist for soloists and choirs. She loves to walk her Golden
+            Retriever, can’t wait to travel to NYC again, and her favorite
+            classical composer is Strauss.
+          </p>
         </div>
       </div>
 
       <div class="card" id="mariachi">
-        <div id="bio-pic-mariachi"></div>
-        <div class="name">
-          <h3>Mariachi Instructor</h3>
-          <h4>Mariachi Instructor</h4>
+        <div class="front">
+          <div id="bio-pic-mariachi"></div>
+          <div class="name">
+            <h3>Mariachi Instructor</h3>
+            <h4>Mariachi Instructor</h4>
+          </div>
+        </div>
+        <div class="back">
+          <p>test</p>
         </div>
       </div>
 
       <div class="card" id="fiddle">
-        <div id="bio-pic-fiddle"></div>
-        <div class="name">
-          <h3>Fiddle Instructor</h3>
-          <h4>Yoga Instructor</h4>
+        <div class="front">
+          <div id="bio-pic-fiddle"></div>
+          <div class="name">
+            <h3>Fiddle Instructor</h3>
+            <h4>Yoga Instructor</h4>
+          </div>
+        </div>
+        <div class="back">
+          <p>test</p>
         </div>
       </div>
       <!-- </section> -->
@@ -122,5 +195,15 @@
         /></a>
       </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script>
+      $(".card").flip({
+        axis: "y",
+        trigger: "hover",
+        speed: "1000",
+      });
+    </script>
   </body>
 </html>

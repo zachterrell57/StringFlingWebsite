@@ -431,6 +431,13 @@ footer .footer-icons #website {
 }
 
 .info-text .card {
+  min-height: 40vh;
+  height: 40vh;
+  margin: 2rem 5rem;
+}
+
+.info-text .card .front,
+.info-text .card .back {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,26 +455,36 @@ footer .footer-icons #website {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 25rem;
           flex: 1 1 25rem;
-  min-height: 40vh;
-  height: 40vh;
-  margin: 2rem 5rem;
   border-radius: 2rem;
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   background-color: black;
 }
 
-.info-text .card h3,
-.info-text .card h4 {
+.info-text .card .front h3,
+.info-text .card .front h4,
+.info-text .card .back h3,
+.info-text .card .back h4 {
   color: white;
 }
 
-.info-text .card h3 {
+.info-text .card .front h3,
+.info-text .card .back h3 {
   font-size: 2rem;
 }
 
-.info-text .card .name {
+.info-text .card .front .name,
+.info-text .card .back .name {
   padding-bottom: 2.5rem;
+}
+
+.info-text .card .front p,
+.info-text .card .back p {
+  padding-top: 0.7rem;
+  padding-right: 0.1rem;
+  padding-left: 0.1rem;
+  color: white;
+  font-size: 1.2rem;
 }
 
 .info-text #cooper {
