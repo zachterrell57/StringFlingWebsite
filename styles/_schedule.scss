@@ -18,7 +18,20 @@
       padding: 2rem 3rem;
       width: 20vw;
       box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
+      //background-color: white;
       text-align: center;
+      background: linear-gradient(to left, white 50%, black 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all 0.5s ease;
+    }
+    .grade-buttons:hover {
+      background-position: left bottom;
+      color: white;
+    }
+    #tab-selected {
+      color: white;
+      background: black;
     }
   }
   .events {
