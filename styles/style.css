@@ -393,6 +393,8 @@ footer .footer-icons #website {
   font-size: 3.6rem;
   background-color: white;
   border: 0.4rem solid #592b82;
+  text-align: center;
+  padding: 1vh 0;
 }
 
 .register-body .register-button:hover {
