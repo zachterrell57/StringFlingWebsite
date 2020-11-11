@@ -23,6 +23,7 @@
   #prof-title {
     grid-row: 1;
     grid-template-columns: 1;
+    align-self: center;
   }
 
   .card {
@@ -110,11 +111,18 @@
   #stu-title {
     grid-row: 3;
     grid-template-columns: 1;
+    align-self: center;
   }
 
   #group-picture {
     grid-row: 3;
-    grid-template-columns: 2/4;
+    grid-column: 2 / span 3;
+    background-color: red;
+    align-self: center;
+    img {
+      max-width: 100%;
+      object-fit: contain;
+    }
   }
 } //
 //.Students {
