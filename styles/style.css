@@ -616,6 +616,14 @@ footer .footer-icons #website {
 }
 
 #schedule-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+}
+
+#schedule-home-nav {
   position: absolute;
   width: 100%;
 }
@@ -706,15 +714,29 @@ footer .footer-icons #website {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 60rem;
           flex: 1 1 60rem;
+  overflow-y: scroll;
+  max-height: 100vh;
+  padding-top: 10vh;
+}
+
+.schedule-page .events .headers {
+  width: 100%;
+  text-align: left;
+  padding-left: 4rem;
+  padding-top: 2rem;
+}
+
+.schedule-page .events .headers h2 {
+  font-weight: 500;
 }
 
 .schedule-page .events .event-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -727,10 +749,12 @@ footer .footer-icons #website {
           flex: 1 1 9rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 2rem;
 }
 
 .schedule-page .events .event-box .times {
   text-align: right;
+  width: 8vw;
 }
 
 .schedule-page .events .event-box .times h3 {

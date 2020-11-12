@@ -17,9 +17,9 @@
     <title>Schedule</title>
   </head>
   <body>
-    <header class="main-head" id="schedule-nav">
+    <header class="main-head" id="schedule-nav" id="schedule-nav">
       <nav>
-        <div class="logo">
+        <div class="logo"
           <a href="..//home/index.html"
             ><img src="../img/whiteNavLogo.png" alt="logo"
           /></a>
@@ -40,29 +40,83 @@
         <a href="tab-three.html" class="grade-buttons"> 8th - 9th grade </a>
       </div>
       <div class="events">
+        <div class="headers">
+          <h2>Saturday</h2>
+        </div>
+
         <div class="event-box">
-          <h3>12:00 PM</h3>
-          <button class="event-button">Event</button>
+          <div class="times">
+            <h3>10:00 AM</h3>
+            <h4>10:45 AM</h4>
+          </div>
+          <button class="event-button">
+            How to Play Fast <b>-or-</b> Be a Conductor!
+          </button>
+        </div>
+
+        <div class="event-box">
+          <div class="times">
+            <h3>11:00 AM</h3>
+            <h4>11:45 AM</h4>
+          </div>
+          <button class="event-button">A Little Bluegrass</button>
+        </div>
+
+        <div class="event-box">
+          <div class="times">
+            <h3>1:00 PM</h3>
+            <h4>1:45 PM</h4>
+          </div>
+          <button class="event-button">How a String Instrument Is Made</button>
+        </div>
+
+        <div class="event-box">
+          <div class="times">
+            <h3>2:00 PM</h3>
+            <h4>2:45 PM</h4>
+          </div>
+          <button class="event-button">
+            Games <b>-or-</b> Yoga For String Players
+          </button>
+        </div>
+
+        <div class="headers">
+          <h2>Sunday</h2>
+        </div>
+
+        <div class="event-box">
+          <div class="times">
+            <h3>10:00 AM</h3>
+            <h4>10:45 AM</h4>
+          </div>
+          <button class="event-button">Learn to Play Mariachi</button>
         </div>
         <div class="event-box">
-          <h3>12:00 PM</h3>
-          <button class="event-button">Movie Music</button>
+          <div class="times">
+            <h3>11:00 AM</h3>
+            <h4>11:45 AM</h4>
+          </div>
+          <button class="event-button">
+            Sounds & Melodies of the Movies <b>-or-</b> Escape Room
+          </button>
         </div>
         <div class="event-box">
-          <h3>12:00 PM</h3>
-          <button class="event-button">Event</button>
+          <div class="times">
+            <h3>1:00 PM</h3>
+            <h4>1:45 PM</h4>
+          </div>
+          <button class="event-button">
+            Fun with Music Theory <b>-or-</b> Beginning Bass Bash
+          </button>
         </div>
         <div class="event-box">
-          <h3>12:00 PM</h3>
-          <button class="event-button">Event</button>
-        </div>
-        <div class="event-box">
-          <h3>12:00 PM</h3>
-          <button class="event-button">Event</button>
-        </div>
-        <div class="event-box">
-          <h3>12:00 PM</h3>
-          <button class="event-button">Event</button>
+          <div class="times">
+            <h3>2:00 PM</h3>
+            <h4>2:45 PM</h4>
+          </div>
+          <button class="event-button">
+            Grand Finale & House Cup Challenge
+          </button>
         </div>
       </div>
     </section>
@@ -94,5 +148,18 @@
         /></a>
       </div>
     </footer>
+    <script>
+      var div = document.querySelector(".events");
+      var prevScrollpos = div.scrollTop;
+      div.onscroll = function () {
+        var currentScrollPos = div.scrollTop;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("schedule-nav").style.top = "0";
+        } else {
+          document.getElementById("schedule-nav").style.top = "-17vh";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
   </body>
 </html>
