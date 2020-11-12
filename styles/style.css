@@ -615,9 +615,9 @@ footer .footer-icons #website {
   margin-top: 10vh;
 }
 
-#schedule-logo {
-  background-color: #565656;
-  width: 30.9vw;
+#schedule-nav {
+  position: absolute;
+  width: 100%;
 }
 
 .schedule-page {
@@ -634,7 +634,7 @@ footer .footer-icons #website {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  min-height: 83vh;
+  min-height: 100vh;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -656,8 +656,9 @@ footer .footer-icons #website {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 5rem;
           flex: 1 1 5rem;
-  min-height: 83vh;
+  min-height: 100vh;
   width: 30.9vw;
+  padding-top: 20vh;
   background-color: #565656;
 }
 
@@ -666,6 +667,7 @@ footer .footer-icons #website {
   border: 0px;
   padding: 2rem 3rem;
   width: 20vw;
+  font-weight: 500;
   -webkit-box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
   text-align: center;
@@ -691,9 +693,9 @@ footer .footer-icons #website {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -710,9 +712,9 @@ footer .footer-icons #website {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -727,15 +729,30 @@ footer .footer-icons #website {
       flex-wrap: wrap;
 }
 
+.schedule-page .events .event-box .times {
+  text-align: right;
+}
+
+.schedule-page .events .event-box .times h3 {
+  font-size: 2.5rem;
+}
+
+.schedule-page .events .event-box .times h4 {
+  font-size: 2.2rem;
+  color: #737373;
+}
+
 .schedule-page .events .event-box .event-button {
   border-radius: 20px;
   -webkit-box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
   border: 0px;
   border-left: 20px solid #592b82;
-  width: 30vw;
-  padding: 1.5rem 10rem;
+  width: 45vw;
+  padding: 1.5rem 3rem;
   background-color: white;
   margin-left: 4rem;
+  font-size: 2.2rem;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */

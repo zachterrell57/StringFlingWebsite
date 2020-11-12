@@ -1,24 +1,26 @@
-#schedule-logo {
-  background-color: rgba(86, 86, 86, 1);
-  width: 30.9vw;
+#schedule-nav {
+  position: absolute;
+  width: 100%;
 }
+
 .schedule-page {
   @include flex(space-between, center, row);
-  min-height: 83vh;
+  min-height: 100vh;
   flex-wrap: wrap;
   .buttons {
     @include flex(space-evenly, center, column);
     flex: 1 1 5rem;
-    min-height: 83vh;
+    min-height: 100vh;
     width: 30.9vw;
+    padding-top: 20vh;
     background-color: rgba(86, 86, 86, 1);
     .grade-buttons {
       border-radius: 20px;
       border: 0px;
       padding: 2rem 3rem;
       width: 20vw;
+      font-weight: 500;
       box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
-      //background-color: white;
       text-align: center;
       background: linear-gradient(to left, white 50%, black 50%);
       background-size: 200% 100%;
@@ -35,21 +37,34 @@
     }
   }
   .events {
-    @include flex(space-evenly, center, column);
+    @include flex(space-between, center, column);
     flex: 1 1 60rem;
     .event-box {
-      @include flex(space-between, center, row);
+      @include flex(space-evenly, center, row);
       flex: 1 1 9rem;
       flex-wrap: wrap;
+      .times {
+        text-align: right;
+
+        h3 {
+          font-size: 2.5rem;
+        }
+        h4 {
+          font-size: 2.2rem;
+          color: rgba(115, 115, 115, 1);
+        }
+      }
       .event-button {
         border-radius: 20px;
         box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
         border: 0px;
         border-left: 20px solid $purple;
-        width: 30vw;
-        padding: 1.5rem 10rem;
+        width: 45vw;
+        padding: 1.5rem 3rem;
         background-color: white;
         margin-left: 4rem;
+        font-size: 2.2rem;
+        text-align: left;
       }
     }
   }
