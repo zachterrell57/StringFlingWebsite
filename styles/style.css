@@ -161,7 +161,7 @@ footer .footer-icons #website {
 
 .background-image {
   min-height: 100vh;
-  background-image: url("..//img/Anderson.jpg");
+  background-image: url("..//img/Anderson.jpeg");
   background-size: cover;
   background-position: center;
 }
@@ -359,6 +359,14 @@ footer .footer-icons #website {
   margin-bottom: 3vh;
 }
 
+.register-body .register-text #message b {
+  color: black;
+}
+
+.register-body .register-text b {
+  color: #592b82;
+}
+
 .register-body .register-online-text {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
@@ -367,17 +375,17 @@ footer .footer-icons #website {
 }
 
 .register-body .bigOrchestra-img {
-  -webkit-transform: translateX(-13vw);
-          transform: translateX(-13vw);
+  -webkit-transform: translateX(-9vw);
+          transform: translateX(-9vw);
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: pic2;
 }
 
 .register-body .bigOrchestra-img img {
-  margin-top: 10vh;
-  height: 70%;
-  width: 120%;
+  margin-top: 15vh;
+  height: 50%;
+  width: 110%;
   -webkit-box-shadow: 20px 20px #592b82;
           box-shadow: 20px 20px #592b82;
 }

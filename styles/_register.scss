@@ -30,19 +30,29 @@
       margin-top: 5vh;
       margin-bottom: 3vh;
     }
+
+    #message {
+      b {
+        color: black;
+      }
+    }
+
+    b {
+      color: $purple;
+    }
   }
   .register-online-text {
     grid-area: text2;
     padding: 0 8vh;
   }
   .bigOrchestra-img {
-    transform: translateX(-13vw);
+    transform: translateX(-9vw);
     //padding-top: 20vh;
     grid-area: pic2;
     img {
-      margin-top: 10vh;
-      height: 70%;
-      width: 120%;
+      margin-top: 15vh;
+      height: 50%;
+      width: 110%;
       box-shadow: 20px 20px $purple;
     }
   }
