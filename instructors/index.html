@@ -134,37 +134,80 @@
         </div>
       </div>
 
-      <div class="card" id="mariachi">
+      <div class="card" id="michael">
         <div class="front">
-          <div id="bio-pic-mariachi"></div>
+          <div id="bio-pic-michael"></div>
           <div class="name">
-            <h3>Mariachi Instructor</h3>
+            <h3>Michael Linert</h3>
             <h4>Mariachi Instructor</h4>
           </div>
+        </div>
+        <div class="back">
+          <p>
+            Michael Linert creates a world fully enriched by orchestral and
+            mariachi music through its study, composition, and performance.
+            Known for an organized instructional approach that fosters both
+            rigor and inspiration, Linert engages with his community through
+            advocacy for equity within music education. While his primary
+            background is in cello and vocal performance and education, Linert
+            has received additional and extensive training under the guidance of
+            Dr. Lorenzo Trujillo of the Mariachi Los Correcaminos de MSU Denver,
+            José Hernández of Mariachi Sol de Mexico, and the faculty of the
+            National Summer Workshop for Mariachi Educators run by Marcia Neel.
+            His student mariachi ensembles have performed and presented at the
+            Colorado Music Educators Association Conference, the Colorado
+            Symphony's Cinco de Mayo Fiesta, the Metropolitan State University’s
+            Lalo Delgado Festival, Metropolitan State University's Viva
+            Southwest Mariachi Festival, the Cherry Creek Diversity Conference,
+            the Women’s Conference in Brighton, and for the donor reception of
+            the Young Latino Philanthropists - Latino Community Foundation of
+            Colorado at the Governor's Residence at Boettcher Mansion. As a
+            mariachi educator, Linert has presented sessions for the Colorado
+            Music Educators Association and the University of Colorado Boulder
+            while also serving as a mariachi consultant to the Aspen Music
+            Festival and School. He cannot wait to share mariachi music with
+            everyone at String Fling!
+          </p>
+        </div>
+      </div>
+
+      <div class="card" id="joe">
+        <div class="front">
+          <div id="bio-pic-joe"></div>
+          <div class="name">
+            <h3>Joe Fedrizzi</h3>
+            <h4>Fiddle Instructor</h4>
+          </div>
+        </div>
+        <div class="back">
+          <p>
+            Joe Fedrizzi hails from Dearborn, Missouri, and plays born classical
+            violin and fiddle. He has been a prize-winner at multiple fiddle
+            competition, including the South Dakota Old-Time Fiddle Contest. Joe
+            graduated from K-State in 2017 with a degree in music education, and
+            currently teaches in the North Platte, MO schools. In addition to
+            his musical activities, Joe has been a volunteer firefighter for
+            many years.
+          </p>
+        </div>
+      </div>
+      <!-- </section> -->
+      <!-- <section class="Students"> -->
+
+      <div id="stu-title">
+        <h2>Student Instructors</h2>
+      </div>
+      <div class="student-card"></div>
+
+      <div class="y-flip-card" id="student-card">
+        <div class="front">
+          <img id="group-picture" src="..//img/BioPics/GroupPhoto.png" alt="" />
         </div>
         <div class="back">
           <p>test</p>
         </div>
       </div>
 
-      <div class="card" id="fiddle">
-        <div class="front">
-          <div id="bio-pic-fiddle"></div>
-          <div class="name">
-            <h3>Fiddle Instructor</h3>
-            <h4>Yoga Instructor</h4>
-          </div>
-        </div>
-        <div class="back">
-          <p>test</p>
-        </div>
-      </div>
-      <!-- </section> -->
-      <!-- <section class="Students"> -->
-      <div id="stu-title">
-        <h2>Student Instructors</h2>
-      </div>
-      <img id="group-picture" src="..//img/BioPics/GroupPhoto.png" alt="" />
       <!-- </section> -->
     </div>
     <footer>
@@ -198,6 +241,14 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script>
+      $(".y-flip-card").flip({
+        axis: "x",
+        trigger: "hover",
+        speed: "1000",
+      });
+    </script>
+
     <script>
       $(".card").flip({
         axis: "y",

@@ -104,35 +104,35 @@
     border-radius: 2rem 2rem 0rem 0rem;
     width: 100%;
     height: 70%;
-    background-image: url("..//img/BioPics/ben.png");
+    background-image: url("..//img/BioPics/heather.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
-  #mariachi {
+  #michael {
     grid-row: 2;
     grid-column: 3;
   }
-  #bio-pic-mariachi {
+  #bio-pic-michael {
     border-radius: 2rem 2rem 0rem 0rem;
     width: 100%;
     height: 70%;
-    background-image: url("..//img/BioPics/ben.png");
+    background-image: url("..//img/BioPics/michael.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
-  #fiddle {
+  #joe {
     grid-row: 2;
     grid-column: 4;
   }
-  #bio-pic-fiddle {
+  #bio-pic-joe {
     border-radius: 2rem 2rem 0rem 0rem;
     width: 100%;
     height: 70%;
-    background-image: url("..//img/BioPics/ben.png");
+    background-image: url("..//img/BioPics/joe.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,15 +144,26 @@
     align-self: center;
   }
 
-  #group-picture {
+  .y-flip-card {
+    //margin-top: 10vh;
+    .back {
+      border-radius: 2rem;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1),
+        0px 20px 20px rgba(0, 0, 0, 0.1);
+      background-color: black;
+    }
+  }
+
+  #student-card {
     grid-row: 3;
     grid-column: 2 / 5;
-    align-self: center;
+  }
+  #group-picture {
     height: 100%;
     width: 100%;
+    align-self: center;
     border-radius: 20px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1),
       0px 20px 20px rgba(0, 0, 0, 0.1);
-    margin-top: 10vh;
   }
 }

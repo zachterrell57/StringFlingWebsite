@@ -556,41 +556,41 @@ footer .footer-icons #website {
   border-radius: 2rem 2rem 0rem 0rem;
   width: 100%;
   height: 70%;
-  background-image: url("..//img/BioPics/ben.png");
+  background-image: url("..//img/BioPics/heather.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.info-text #mariachi {
+.info-text #michael {
   -ms-grid-row: 2;
   grid-row: 2;
   -ms-grid-column: 3;
   grid-column: 3;
 }
 
-.info-text #bio-pic-mariachi {
+.info-text #bio-pic-michael {
   border-radius: 2rem 2rem 0rem 0rem;
   width: 100%;
   height: 70%;
-  background-image: url("..//img/BioPics/ben.png");
+  background-image: url("..//img/BioPics/michael.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.info-text #fiddle {
+.info-text #joe {
   -ms-grid-row: 2;
   grid-row: 2;
   -ms-grid-column: 4;
   grid-column: 4;
 }
 
-.info-text #bio-pic-fiddle {
+.info-text #bio-pic-joe {
   border-radius: 2rem 2rem 0rem 0rem;
   width: 100%;
   height: 70%;
-  background-image: url("..//img/BioPics/ben.png");
+  background-image: url("..//img/BioPics/joe.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -606,21 +606,30 @@ footer .footer-icons #website {
       align-self: center;
 }
 
-.info-text #group-picture {
+.info-text .y-flip-card .back {
+  border-radius: 2rem;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  background-color: black;
+}
+
+.info-text #student-card {
   -ms-grid-row: 3;
   grid-row: 3;
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-column: 2 / 5;
+}
+
+.info-text #group-picture {
+  height: 100%;
+  width: 100%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  height: 100%;
-  width: 100%;
   border-radius: 20px;
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
-  margin-top: 10vh;
 }
 
 #schedule-nav {
