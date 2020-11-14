@@ -45,8 +45,8 @@
   .events {
     @include flex(space-between, center, column);
     flex: 1 1 60rem;
-    overflow-y: scroll;
-    max-height: 100vh;
+    overflow-y: auto;
+    height: 83vh;
     padding-top: 10vh;
     .headers {
       width: 100%;
@@ -56,6 +56,36 @@
       h2 {
         font-weight: 500;
       }
+    }
+
+    #home-events {
+      overflow-y: none;
+    }
+
+    .horizontal-square {
+      @include flex(center, center, row);
+      border-radius: 20px;
+      border: 2px solid $purple;
+      height: 65vh;
+      width: 50vw;
+      position: absolute;
+      opacity: 0.1;
+      img {
+        height: 100%;
+        width: 80%;
+      }
+    }
+
+    .vertical-square {
+      @include flex(center, center, row);
+      border-radius: 20px;
+      border: 2px solid rgba(89, 43, 130, 0.1);
+      height: 75vh;
+      width: 45vw;
+    }
+
+    #home-text {
+      color: black;
     }
 
     .event-box {

@@ -161,7 +161,7 @@ footer .footer-icons #website {
 
 .background-image {
   min-height: 100vh;
-  background-image: url("..//img/Anderson.jpeg");
+  background-image: url("..//img/Anderson.png");
   background-size: cover;
   background-position: center;
 }
@@ -731,8 +731,8 @@ footer .footer-icons #website {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 60rem;
           flex: 1 1 60rem;
-  overflow-y: scroll;
-  max-height: 100vh;
+  overflow-y: auto;
+  height: 83vh;
   padding-top: 10vh;
 }
 
@@ -745,6 +745,61 @@ footer .footer-icons #website {
 
 .schedule-page .events .headers h2 {
   font-weight: 500;
+}
+
+.schedule-page .events #home-events {
+  overflow-y: none;
+}
+
+.schedule-page .events .horizontal-square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 20px;
+  border: 2px solid #592b82;
+  height: 65vh;
+  width: 50vw;
+  position: absolute;
+  opacity: 0.1;
+}
+
+.schedule-page .events .horizontal-square img {
+  height: 100%;
+  width: 80%;
+}
+
+.schedule-page .events .vertical-square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 20px;
+  border: 2px solid rgba(89, 43, 130, 0.1);
+  height: 75vh;
+  width: 45vw;
+}
+
+.schedule-page .events #home-text {
+  color: black;
 }
 
 .schedule-page .events .event-box {
