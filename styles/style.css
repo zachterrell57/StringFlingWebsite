@@ -330,6 +330,8 @@ footer .footer-icons #website {
 }
 
 .register-body .string-fling-img {
+  -ms-grid-column-align: center;
+      justify-self: center;
   -webkit-transform: translateX(12rem);
           transform: translateX(12rem);
   padding-top: 4vh;
