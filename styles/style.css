@@ -413,39 +413,69 @@ footer .footer-icons #website {
   cursor: pointer;
 }
 
-.info-text {
+.main-body {
   min-height: 83vh;
   width: 90%;
   margin: 0 5% 5% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-body .professionals {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main-body .professionals #prof-title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.main-body .professionals .info-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-.info-text #prof-title {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.main-body .professionals .info-text .card {
+  height: 400px;
+  width: 270px;
+  margin: 20px 50px;
 }
 
-.info-text #prof-title h2 {
-  font-size: 3vw;
-}
-
-.info-text .scene {
-  -webkit-perspective: 600px;
-          perspective: 600px;
-}
-
-.info-text .card {
-  height: 50vh;
-  width: 18vw;
-  margin: 2rem 5rem;
-}
-
-.info-text .card .front,
-.info-text .card .back {
+.main-body .professionals .info-text .card .front,
+.main-body .professionals .info-text .card .back {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,36 +493,36 @@ footer .footer-icons #website {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 25rem;
           flex: 1 1 25rem;
-  border-radius: 2rem;
+  border-radius: 20px;
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   background-color: black;
 }
 
-.info-text .card .front h3,
-.info-text .card .front h4,
-.info-text .card .back h3,
-.info-text .card .back h4 {
+.main-body .professionals .info-text .card .front h3,
+.main-body .professionals .info-text .card .front h4,
+.main-body .professionals .info-text .card .back h3,
+.main-body .professionals .info-text .card .back h4 {
   color: white;
 }
 
-.info-text .card .front h3,
-.info-text .card .back h3 {
-  font-size: 1.5vw;
+.main-body .professionals .info-text .card .front h3,
+.main-body .professionals .info-text .card .back h3 {
+  font-size: 25px;
 }
 
-.info-text .card .front h4,
-.info-text .card .back h4 {
-  font-size: 1vw;
+.main-body .professionals .info-text .card .front h4,
+.main-body .professionals .info-text .card .back h4 {
+  font-size: 15px;
 }
 
-.info-text .card .front .name,
-.info-text .card .back .name {
-  padding-bottom: 4vh;
+.main-body .professionals .info-text .card .front .name,
+.main-body .professionals .info-text .card .back .name {
+  padding-bottom: 30px;
 }
 
-.info-text .card .front p,
-.info-text .card .back p {
+.main-body .professionals .info-text .card .front p,
+.main-body .professionals .info-text .card .back p {
   padding-top: 0.7rem;
   padding-right: 0.1rem;
   padding-left: 0.1rem;
@@ -500,7 +530,7 @@ footer .footer-icons #website {
   font-size: 1.2rem;
 }
 
-.info-text #bio-pic-cooper {
+.main-body .professionals .info-text #bio-pic-cooper {
   border-radius: 2rem 2rem 0rem 0rem;
   width: 100%;
   height: 70%;
@@ -510,7 +540,7 @@ footer .footer-icons #website {
   background-repeat: no-repeat;
 }
 
-.info-text #bio-pic-dirks {
+.main-body .professionals .info-text #bio-pic-dirks {
   border-radius: 2rem 2rem 0rem 0rem;
   width: 100%;
   height: 70%;
@@ -520,7 +550,7 @@ footer .footer-icons #website {
   background-repeat: no-repeat;
 }
 
-.info-text #bio-pic-ben {
+.main-body .professionals .info-text #bio-pic-ben {
   border-radius: 2rem 2rem 0rem 0rem;
   width: 100%;
   height: 70%;
@@ -530,7 +560,7 @@ footer .footer-icons #website {
   background-repeat: no-repeat;
 }
 
-.info-text #bio-pic-heather {
+.main-body .professionals .info-text #bio-pic-heather {
   border-radius: 2rem 2rem 0rem 0rem;
   width: 100%;
   height: 70%;
@@ -540,7 +570,7 @@ footer .footer-icons #website {
   background-repeat: no-repeat;
 }
 
-.info-text #bio-pic-michael {
+.main-body .professionals .info-text #bio-pic-michael {
   border-radius: 2rem 2rem 0rem 0rem;
   width: 100%;
   height: 70%;
@@ -550,7 +580,7 @@ footer .footer-icons #website {
   background-repeat: no-repeat;
 }
 
-.info-text #bio-pic-joe {
+.main-body .professionals .info-text #bio-pic-joe {
   border-radius: 2rem 2rem 0rem 0rem;
   width: 100%;
   height: 70%;
@@ -560,32 +590,51 @@ footer .footer-icons #website {
   background-repeat: no-repeat;
 }
 
-.info-text #stu-title {
-  -ms-grid-row: 3;
-  grid-row: 3;
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.main-body .students {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.info-text .y-flip-card .back {
-  border-radius: 2rem;
+.main-body .students #stu-title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.main-body .students .y-flip-card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 70%;
+          flex: 1 1 70%;
+}
+
+.main-body .students .y-flip-card .back {
+  border-radius: 20px;
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   background-color: black;
 }
 
-.info-text #student-card {
-  -ms-grid-row: 3;
-  grid-row: 3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-column: 2 / 5;
+.main-body .students .y-flip-card h3,
+.main-body .students .y-flip-card h4 {
+  color: white;
 }
 
-.info-text #group-picture {
+.main-body .students #group-picture {
   height: 100%;
   width: 100%;
   -ms-flex-item-align: center;
