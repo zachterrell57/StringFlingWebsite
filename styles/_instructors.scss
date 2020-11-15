@@ -2,15 +2,17 @@
   min-height: 83vh;
   width: 90%;
   margin: 0 5% 5% 5%;
-
   display: grid;
-  grid-template-columns: 25vw repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  //grid-template-rows: repeat(auto-fill, 1fr);
 
   #prof-title {
-    grid-row: 1;
-    grid-column: 1;
+    //grid-row: 1;
+    //grid-column: 1;
     align-self: center;
+    h2 {
+      font-size: 3vw;
+    }
   }
 
   .scene {
@@ -18,8 +20,8 @@
   }
 
   .card {
-    min-height: 40vh;
-    height: 40vh;
+    height: 50vh;
+    width: 18vw;
     margin: 2rem 5rem;
 
     .front,
@@ -37,11 +39,14 @@
       }
 
       h3 {
-        font-size: 2rem;
+        font-size: 1.5vw;
+      }
+      h4 {
+        font-size: 1vw;
       }
 
       .name {
-        padding-bottom: 2.5rem;
+        padding-bottom: 4vh;
       }
 
       p {
@@ -55,8 +60,8 @@
   }
 
   #cooper {
-    grid-row: 1;
-    grid-column: 2;
+    //grid-row: 1;
+    //grid-column: 2;
   }
   #bio-pic-cooper {
     border-radius: 2rem 2rem 0rem 0rem;
@@ -69,8 +74,8 @@
   }
 
   #dirks {
-    grid-row: 1;
-    grid-column: 3;
+    //grid-row: 1;
+    //grid-column: 3;
   }
   #bio-pic-dirks {
     border-radius: 2rem 2rem 0rem 0rem;
@@ -83,8 +88,8 @@
   }
 
   #ben {
-    grid-row: 1;
-    grid-column: 4;
+    //grid-row: 1;
+    //grid-column: 4;
   }
   #bio-pic-ben {
     border-radius: 2rem 2rem 0rem 0rem;
@@ -97,8 +102,8 @@
   }
 
   #heather {
-    grid-row: 2;
-    grid-column: 2;
+    //grid-row: 2;
+    //grid-column: 2;
   }
   #bio-pic-heather {
     border-radius: 2rem 2rem 0rem 0rem;
@@ -111,8 +116,8 @@
   }
 
   #michael {
-    grid-row: 2;
-    grid-column: 3;
+    //grid-row: 2;
+    //grid-column: 3;
   }
   #bio-pic-michael {
     border-radius: 2rem 2rem 0rem 0rem;
@@ -125,8 +130,8 @@
   }
 
   #joe {
-    grid-row: 2;
-    grid-column: 4;
+    //grid-row: 2;
+    //grid-column: 4;
   }
   #bio-pic-joe {
     border-radius: 2rem 2rem 0rem 0rem;
@@ -145,7 +150,6 @@
   }
 
   .y-flip-card {
-    //margin-top: 10vh;
     .back {
       border-radius: 2rem;
       box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1),

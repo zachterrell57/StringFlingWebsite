@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  font-size: 7.2rem;
+  font-size: 4.5vw;
 }
 
 li,
@@ -24,17 +24,17 @@ label,
 input,
 a,
 p {
-  font-size: 2.5rem;
+  font-size: 2vw;
 }
 
 h2 {
-  font-size: 4.8rem;
+  font-size: 3.5vw;
   font-weight: 400;
   color: #592b82;
 }
 
 h3 {
-  font-size: 3.6rem;
+  font-size: 2vw;
   font-weight: normal;
 }
 
@@ -164,6 +164,7 @@ footer .footer-icons #website {
   background-image: url("..//img/Anderson.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .gradient {
@@ -208,11 +209,11 @@ footer .footer-icons #website {
 }
 
 .hero .text .left-side #TitleTextTop {
-  padding-right: 8rem;
+  padding-right: 6vw;
 }
 
 .hero .text .left-side #TitleTextBottom {
-  padding-left: 9rem;
+  padding-left: 9vw;
 }
 
 .hero .text .right-side {
@@ -220,8 +221,8 @@ footer .footer-icons #website {
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
   text-align: left;
-  padding-left: 8rem;
-  padding-top: 9rem;
+  padding-left: 4vw;
+  padding-top: 6vw;
 }
 
 .hello {
@@ -328,7 +329,7 @@ footer .footer-icons #website {
   overflow: hidden;
 }
 
-.register-body .cello-img {
+.register-body .string-fling-img {
   -webkit-transform: translateX(12rem);
           transform: translateX(12rem);
   padding-top: 4vh;
@@ -416,20 +417,18 @@ footer .footer-icons #website {
   margin: 0 5% 5% 5%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25vw (1fr)[3];
-      grid-template-columns: 25vw repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .info-text #prof-title {
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 1;
-  grid-column: 1;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.info-text #prof-title h2 {
+  font-size: 3vw;
 }
 
 .info-text .scene {
@@ -438,8 +437,8 @@ footer .footer-icons #website {
 }
 
 .info-text .card {
-  min-height: 40vh;
-  height: 40vh;
+  height: 50vh;
+  width: 18vw;
   margin: 2rem 5rem;
 }
 
@@ -477,12 +476,17 @@ footer .footer-icons #website {
 
 .info-text .card .front h3,
 .info-text .card .back h3 {
-  font-size: 2rem;
+  font-size: 1.5vw;
+}
+
+.info-text .card .front h4,
+.info-text .card .back h4 {
+  font-size: 1vw;
 }
 
 .info-text .card .front .name,
 .info-text .card .back .name {
-  padding-bottom: 2.5rem;
+  padding-bottom: 4vh;
 }
 
 .info-text .card .front p,
@@ -492,13 +496,6 @@ footer .footer-icons #website {
   padding-left: 0.1rem;
   color: white;
   font-size: 1.2rem;
-}
-
-.info-text #cooper {
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 2;
-  grid-column: 2;
 }
 
 .info-text #bio-pic-cooper {
@@ -511,13 +508,6 @@ footer .footer-icons #website {
   background-repeat: no-repeat;
 }
 
-.info-text #dirks {
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 3;
-  grid-column: 3;
-}
-
 .info-text #bio-pic-dirks {
   border-radius: 2rem 2rem 0rem 0rem;
   width: 100%;
@@ -526,13 +516,6 @@ footer .footer-icons #website {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.info-text #ben {
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 4;
-  grid-column: 4;
 }
 
 .info-text #bio-pic-ben {
@@ -545,13 +528,6 @@ footer .footer-icons #website {
   background-repeat: no-repeat;
 }
 
-.info-text #heather {
-  -ms-grid-row: 2;
-  grid-row: 2;
-  -ms-grid-column: 2;
-  grid-column: 2;
-}
-
 .info-text #bio-pic-heather {
   border-radius: 2rem 2rem 0rem 0rem;
   width: 100%;
@@ -562,13 +538,6 @@ footer .footer-icons #website {
   background-repeat: no-repeat;
 }
 
-.info-text #michael {
-  -ms-grid-row: 2;
-  grid-row: 2;
-  -ms-grid-column: 3;
-  grid-column: 3;
-}
-
 .info-text #bio-pic-michael {
   border-radius: 2rem 2rem 0rem 0rem;
   width: 100%;
@@ -577,13 +546,6 @@ footer .footer-icons #website {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.info-text #joe {
-  -ms-grid-row: 2;
-  grid-row: 2;
-  -ms-grid-column: 4;
-  grid-column: 4;
 }
 
 .info-text #bio-pic-joe {
@@ -830,11 +792,11 @@ footer .footer-icons #website {
 }
 
 .schedule-page .events .event-box .times h3 {
-  font-size: 2.5rem;
+  font-size: 1.7vw;
 }
 
 .schedule-page .events .event-box .times h4 {
-  font-size: 2.2rem;
+  font-size: 1.3vw;
   color: #737373;
 }
 
@@ -848,7 +810,7 @@ footer .footer-icons #website {
   padding: 1.5rem 3rem;
   background-color: white;
   margin-left: 4rem;
-  font-size: 2.2rem;
+  font-size: 1.4vw;
   text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
