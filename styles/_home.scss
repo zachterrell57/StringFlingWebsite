@@ -16,8 +16,7 @@
 
   .text {
     @include flex(space-between, center, row);
-    h1,
-    h2 {
+    h1 {
       font-weight: 400;
       letter-spacing: 0.45rem;
     }
@@ -79,8 +78,13 @@
   .text-section {
     padding-bottom: 5rem;
   }
+  .group-img {
+    @include flex(center, center, row);
+    //width: 90%;
+  }
   #crew-image {
     border-radius: 20px;
     box-shadow: -20px 20px $purple;
+    width: 130%;
   }
 }
