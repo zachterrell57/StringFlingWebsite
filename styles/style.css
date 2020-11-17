@@ -346,10 +346,22 @@ footer .footer-icons #website {
 }
 
 .register-body .string-fling-img {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -webkit-transform: translateX(12rem);
-          transform: translateX(12rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  -webkit-transform: translateX(12px);
+          transform: translateX(12px);
   padding-top: 4vh;
   -ms-grid-row: 1;
   -ms-grid-column: 2;

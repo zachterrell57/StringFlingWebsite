@@ -10,8 +10,10 @@
   position: relative;
   overflow: hidden;
   .string-fling-img {
+    @include flex(center, center, column);
     justify-self: center;
-    transform: translateX(12rem);
+
+    transform: translateX(12px);
     padding-top: 4vh;
     grid-area: pic1;
   }
