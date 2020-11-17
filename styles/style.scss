@@ -20,9 +20,46 @@ $purple: rgba(89, 43, 130, 1);
 @import "_instructors";
 @import "_schedule";
 
-// Home Responsiveness//
+@media screen and (max-width: 1420px) {
+  .schedule-nav {
+    color: white;
+    border-color: white;
+  }
+  #schedule-selected {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid white;
+  }
+
+  .schedule-page {
+    flex-direction: column;
+    .buttons {
+      flex-direction: row;
+      width: 100%;
+      min-height: 30vh;
+      padding-bottom: 7vh;
+      .grade-buttons {
+        @include flex(center, center, row);
+        min-height: 9rem;
+      }
+    }
+    .events {
+      min-height: 80vh;
+      padding-bottom: 10vh;
+      padding-top: 0;
+      margin-top: 7rem;
+      .vertical-square {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+        height: 900px;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 1145px) {
+  nav {
+  }
   .welcome {
     flex-direction: column;
     padding-bottom: 0;
@@ -42,6 +79,7 @@ $purple: rgba(89, 43, 130, 1);
 }
 
 @media screen and (max-width: 1045px) {
+  //Nav
   nav {
     flex-direction: column;
     min-height: 10vh;
@@ -55,6 +93,7 @@ $purple: rgba(89, 43, 130, 1);
       }
     }
   }
+  //Home
   .background-image {
     max-height: 80vh;
     .gradient {
@@ -113,6 +152,15 @@ $purple: rgba(89, 43, 130, 1);
 
   .group-img {
     width: 80%;
+  }
+  //Schedule
+  .schedule-nav {
+    position: relative;
+  }
+  .schedule-page {
+    .buttons {
+      padding-top: 30rem;
+    }
   }
   //Instructors Responsiveness
   .main-body {

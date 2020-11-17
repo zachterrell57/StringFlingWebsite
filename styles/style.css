@@ -822,6 +822,7 @@ footer .footer-icons #website {
   width: 50vw;
   position: absolute;
   opacity: 0.1;
+  min-width: 50%;
 }
 
 .schedule-page .events .horizontal-square img {
@@ -847,6 +848,7 @@ footer .footer-icons #website {
   border: 2px solid rgba(89, 43, 130, 0.1);
   height: 75vh;
   width: 45vw;
+  min-width: 50%;
 }
 
 .schedule-page .events #home-text {
@@ -901,6 +903,60 @@ footer .footer-icons #website {
   margin-left: 4rem;
   font-size: 1.4vw;
   text-align: left;
+}
+
+@media screen and (max-width: 1420px) {
+  .schedule-nav {
+    color: white;
+    border-color: white;
+  }
+  #schedule-selected {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid white;
+  }
+  .schedule-page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .schedule-page .buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    min-height: 30vh;
+    padding-bottom: 7vh;
+  }
+  .schedule-page .buttons .grade-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: 9rem;
+  }
+  .schedule-page .events {
+    min-height: 80vh;
+    padding-bottom: 10vh;
+    padding-top: 0;
+    margin-top: 7rem;
+  }
+  .schedule-page .events .vertical-square {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    height: 900px;
+  }
 }
 
 @media screen and (max-width: 1145px) {
@@ -1019,6 +1075,12 @@ footer .footer-icons #website {
   }
   .group-img {
     width: 80%;
+  }
+  .schedule-nav {
+    position: relative;
+  }
+  .schedule-page .buttons {
+    padding-top: 30rem;
   }
   .main-body .professionals {
     -webkit-box-orient: vertical;

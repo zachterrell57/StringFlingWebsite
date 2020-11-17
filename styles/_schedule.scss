@@ -48,6 +48,7 @@
     overflow-y: auto;
     height: 83vh;
     padding-top: 10vh;
+
     .headers {
       width: 100%;
       text-align: left;
@@ -70,6 +71,7 @@
       width: 50vw;
       position: absolute;
       opacity: 0.1;
+      min-width: 50%;
       img {
         height: 100%;
         width: 80%;
@@ -82,6 +84,7 @@
       border: 2px solid rgba(89, 43, 130, 0.1);
       height: 75vh;
       width: 45vw;
+      min-width: 50%;
     }
 
     #home-text {
