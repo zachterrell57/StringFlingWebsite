@@ -78,7 +78,7 @@ nav {
 }
 
 nav img {
-  height: 17vh;
+  height: 9vw;
 }
 
 nav ul {
@@ -376,17 +376,16 @@ footer .footer-icons #website {
       -ms-flex-direction: column;
           flex-direction: column;
   justify-self: center;
-  -webkit-transform: translateX(12px);
-          transform: translateX(12px);
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
   padding-top: 4vh;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: pic1;
 }
 
-.register-body img {
+.register-body .string-fling-img img {
   width: 100%;
-  border-radius: 20px;
   -webkit-box-shadow: -20px 20px #592b82;
           box-shadow: -20px 20px #592b82;
 }
@@ -444,6 +443,19 @@ footer .footer-icons #website {
   grid-area: regButton;
   border-radius: 20px;
   margin: 10vh 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: center;
+          flex-direction: center;
   font-size: 3.6rem;
   background-color: white;
   border: 0.4rem solid #592b82;
@@ -565,7 +577,7 @@ footer .footer-icons #website {
   padding-right: 0.1rem;
   padding-left: 0.1rem;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .main-body .professionals .info-text #bio-pic-cooper {
@@ -905,7 +917,7 @@ footer .footer-icons #website {
   text-align: left;
 }
 
-@media screen and (max-width: 1420px) {
+@media screen and (max-width: 1100px) {
   #schedule-home-nav nav .schedule-nav {
     color: white;
   }
@@ -962,34 +974,44 @@ footer .footer-icons #website {
     text-align: center;
     height: 900px;
   }
-}
-
-@media screen and (max-width: 1145px) {
-  nav ul {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  nav ul a {
-    margin: 0;
-  }
-  .welcome {
+  .register-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 0;
-    padding-top: 0;
   }
-  .welcome .welcomeinfo {
-    padding: 8vh 15vw 0vh 15vw;
-    max-height: 20vh;
-    margin-bottom: 10vh;
-  }
-  .welcome .welcomeinfo h2 {
+  .register-body h1 {
     text-align: center;
   }
-  .welcome .welcome-img {
+  .register-body .string-fling-img {
+    padding: 0;
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+  .register-body .string-fling-img img {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    height: 50%;
+    width: 80%;
+    -webkit-box-shadow: -10px 10px #592b82;
+            box-shadow: -10px 10px #592b82;
+  }
+  .register-body .bigOrchestra-img {
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+    padding: 2vh, 0;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: pic2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1004,15 +1026,36 @@ footer .footer-icons #website {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .register-body .bigOrchestra-img img {
+    margin-top: 5vh;
+    height: 50%;
+    width: 80%;
+    -webkit-box-shadow: 10px -10px #592b82;
+            box-shadow: 10px -10px #592b82;
+  }
+  .register-body .register-button {
+    width: 30vw;
+    margin: 7vh 35vw;
+  }
+  .footer-icons a #facebook,
+  .footer-icons a #website {
+    margin: 0rem;
+  }
+  .footer-icons a #website {
+    margin-left: 5rem;
+  }
 }
 
-@media screen and (max-width: 1045px) {
+@media screen and (max-width: 970px) {
   nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     min-height: 10vh;
+  }
+  nav img {
+    height: 16vw;
   }
   nav ul {
     -webkit-box-pack: space-evenly;
@@ -1138,31 +1181,6 @@ footer .footer-icons #website {
   .main-body .students .y-flip-card {
     height: 5vh;
   }
-  .register-body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .register-body h1 {
-    text-align: center;
-  }
-  .footer-icons a #facebook,
-  .footer-icons a #website {
-    margin: 0rem;
-  }
-  .footer-icons a #website {
-    margin-left: 5rem;
-  }
 }
 
 @media screen and (max-width: 850px) {
@@ -1280,6 +1298,19 @@ footer .footer-icons #website {
     background-size: 0 0;
     font-size: 300%;
   }
+  .register-body .register-text {
+    padding-right: 3vw;
+    padding-left: 3vw;
+  }
+  .register-body .register-online-text {
+    padding-right: 3vw;
+    padding-left: 3vw;
+  }
+  .register-body .register-button {
+    font-size: 2.6rem;
+    width: 50vw;
+    margin: 7vh 35vw;
+  }
 }
 
 @media screen and (max-width: 415px) {
@@ -1292,6 +1323,7 @@ footer .footer-icons #website {
     width: 100%;
   }
   nav .logo img {
+    height: 30vw;
     width: 100%;
   }
   li {
@@ -1338,11 +1370,17 @@ footer .footer-icons #website {
     min-height: 5rem;
     min-width: 80vw;
   }
+  .schedule-page .events .headers {
+    padding-left: 2rem;
+  }
   .schedule-page .events .headers h2 {
     font-size: 300%;
   }
+  .schedule-page .events .event-box {
+    margin: 1rem;
+  }
   .schedule-page .events .event-box .times {
-    width: 25vw;
+    width: 15vw;
   }
   .schedule-page .events .event-box .times h3,
   .schedule-page .events .event-box .times h4 {
@@ -1352,6 +1390,9 @@ footer .footer-icons #website {
     padding-left: 1rem;
     min-width: 15rem;
     font-size: 100%;
+    margin-left: 2rem;
+    -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
   }
 }
 /*# sourceMappingURL=style.css.map */

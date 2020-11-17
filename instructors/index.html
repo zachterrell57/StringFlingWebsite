@@ -147,30 +147,17 @@
             </div>
             <div class="back">
               <p>
-                Michael Linert creates a world fully enriched by orchestral and
-                mariachi music through its study, composition, and performance.
-                Known for an organized instructional approach that fosters both
-                rigor and inspiration, Linert engages with his community through
-                advocacy for equity within music education. While his primary
-                background is in cello and vocal performance and education,
-                Linert has received additional and extensive training under the
-                guidance of Dr. Lorenzo Trujillo of the Mariachi Los
-                Correcaminos de MSU Denver, José Hernández of Mariachi Sol de
-                Mexico, and the faculty of the National Summer Workshop for
-                Mariachi Educators run by Marcia Neel. His student mariachi
-                ensembles have performed and presented at the Colorado Music
-                Educators Association Conference, the Colorado Symphony's Cinco
-                de Mayo Fiesta, the Metropolitan State University’s Lalo Delgado
-                Festival, Metropolitan State University's Viva Southwest
-                Mariachi Festival, the Cherry Creek Diversity Conference, the
-                Women’s Conference in Brighton, and for the donor reception of
-                the Young Latino Philanthropists - Latino Community Foundation
-                of Colorado at the Governor's Residence at Boettcher Mansion. As
-                a mariachi educator, Linert has presented sessions for the
-                Colorado Music Educators Association and the University of
-                Colorado Boulder while also serving as a mariachi consultant to
-                the Aspen Music Festival and School. He cannot wait to share
-                mariachi music with everyone at String Fling!
+                Using an organized, instructional approach that fosters rigor
+                and inspiration, Linert engages with his community through
+                advocacy for equity within music education. Linert has received
+                extensive training under the guidance of Dr. Lorenzo Trujillo of
+                the Mariachi Los Correcaminos de MSU Denver, José Hernández of
+                Mariachi Sol de Mexico, and the faculty of the National Summer
+                Workshop for Mariachi Educators run by Marcia Neel. As a
+                mariachi educator, Linert has presented for the Colorado Music
+                Educators Association and the University of Colorado Boulder
+                while also serving as a mariachi consultant to the Aspen Music
+                Festival and School.
               </p>
             </div>
           </div>
@@ -253,13 +240,21 @@
         speed: "1000",
       });
     </script> -->
-
     <script>
-      $(".card").flip({
-        axis: "y",
-        trigger: "hover",
-        speed: "1000",
-      });
+      if (!!("ontouchstart" in window)) {
+        alert("Tap on any card to read a bio!");
+        $(".card").flip({
+          axis: "y",
+          trigger: "tap",
+          speed: "1000",
+        });
+      } else {
+        $(".card").flip({
+          axis: "y",
+          trigger: "hover",
+          speed: "1000",
+        });
+      }
     </script>
   </body>
 </html>
