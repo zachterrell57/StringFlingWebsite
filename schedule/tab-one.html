@@ -178,6 +178,34 @@
         }
         prevScrollpos = currentScrollPos;
       };
+      window.onresize = function () {
+        if (window.outerWidth < 1420) {
+          div.onscroll = function () {};
+        } else {
+          div.onscroll = function () {
+            var currentScrollPos = div.scrollTop;
+            if (prevScrollpos > currentScrollPos) {
+              document.getElementById("schedule-nav").style.top = "0";
+            } else {
+              document.getElementById("schedule-nav").style.top = "-17vh";
+            }
+            prevScrollpos = currentScrollPos;
+          };
+        }
+        /* if (window.outerWidth > 1420) {
+          var div = document.querySelector(".events");
+          var prevScrollpos = div.scrollTop;
+        }
+        div.onscroll = function () {
+          var currentScrollPos = div.scrollTop;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("schedule-nav").style.top = "0";
+          } else {
+            document.getElementById("schedule-nav").style.top = "-17vh";
+          }
+          prevScrollpos = currentScrollPos;
+        }; */
+      };
     </script>
   </body>
 </html>

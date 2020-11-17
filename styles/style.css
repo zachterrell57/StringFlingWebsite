@@ -910,14 +910,10 @@ footer .footer-icons #website {
     color: white;
   }
   #schedule-nav {
-    display: absolute;
-  }
-  #schedule-nav nav {
-    display: absolute;
+    position: absolute;
   }
   #schedule-nav nav .schedule-nav {
     color: white;
-    display: absolute;
   }
   #schedule-selected {
     padding-bottom: 0.5rem;
@@ -1095,7 +1091,9 @@ footer .footer-icons #website {
   }
   .schedule-page .buttons {
     min-height: 35vh;
+    top: 25rem;
     padding-top: 25rem;
+    padding-bottom: 10rem;
   }
   .schedule-page .events .headers h2 {
     font-size: 500%;
@@ -1229,10 +1227,23 @@ footer .footer-icons #website {
   }
   .schedule-page .buttons {
     min-height: 45vh;
-    padding-top: 22rem;
+    padding-top: 25rem;
   }
   .schedule-page .buttons .grade-buttons {
     min-height: 13rem;
+  }
+  .schedule-page .events .headers h2 {
+    font-size: 500%;
+  }
+  .schedule-page .events .event-box .times {
+    width: 25vw;
+  }
+  .schedule-page .events .event-box .times h3,
+  .schedule-page .events .event-box .times h4 {
+    font-size: 200%;
+  }
+  .schedule-page .events .event-box .event-button {
+    font-size: 200%;
   }
   #stu-title h2,
   #prof-title h2 {
@@ -1321,10 +1332,26 @@ footer .footer-icons #website {
             flex-direction: column;
     min-height: 80vh;
     padding-top: 15rem;
+    padding-bottom: 0rem;
   }
   .schedule-page .buttons .grade-buttons {
     min-height: 5rem;
     min-width: 80vw;
+  }
+  .schedule-page .events .headers h2 {
+    font-size: 300%;
+  }
+  .schedule-page .events .event-box .times {
+    width: 25vw;
+  }
+  .schedule-page .events .event-box .times h3,
+  .schedule-page .events .event-box .times h4 {
+    font-size: 100%;
+  }
+  .schedule-page .events .event-box .event-button {
+    padding-left: 1rem;
+    min-width: 15rem;
+    font-size: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

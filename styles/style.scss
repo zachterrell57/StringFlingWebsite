@@ -28,13 +28,12 @@ $purple: rgba(89, 43, 130, 1);
       }
     }
   }
+
   #schedule-nav {
-    display: absolute;
+    position: absolute;
     nav {
-      display: absolute;
       .schedule-nav {
         color: white;
-        display: absolute;
       }
     }
   }
@@ -176,7 +175,9 @@ $purple: rgba(89, 43, 130, 1);
   .schedule-page {
     .buttons {
       min-height: 35vh;
+      top: 25rem;
       padding-top: 25rem;
+      padding-bottom: 10rem;
     }
     .events {
       .headers {
@@ -318,9 +319,28 @@ $purple: rgba(89, 43, 130, 1);
   .schedule-page {
     .buttons {
       min-height: 45vh;
-      padding-top: 22rem;
+      padding-top: 25rem;
       .grade-buttons {
         min-height: 13rem;
+      }
+    }
+    .events {
+      .headers {
+        h2 {
+          font-size: 500%;
+        }
+      }
+      .event-box {
+        .times {
+          width: 25vw;
+          h3,
+          h4 {
+            font-size: 200%;
+          }
+        }
+        .event-button {
+          font-size: 200%;
+        }
       }
     }
   }
@@ -431,9 +451,31 @@ $purple: rgba(89, 43, 130, 1);
       flex-direction: column;
       min-height: 80vh;
       padding-top: 15rem;
+      padding-bottom: 0rem;
       .grade-buttons {
         min-height: 5rem;
         min-width: 80vw;
+      }
+    }
+    .events {
+      .headers {
+        h2 {
+          font-size: 300%;
+        }
+      }
+      .event-box {
+        .times {
+          width: 25vw;
+          h3,
+          h4 {
+            font-size: 100%;
+          }
+        }
+        .event-button {
+          padding-left: 1rem;
+          min-width: 15rem;
+          font-size: 100%;
+        }
       }
     }
   }
