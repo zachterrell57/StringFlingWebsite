@@ -55,6 +55,12 @@ $purple: rgba(89, 43, 130, 1);
       }
     }
   }
+  .background-image {
+    max-height: 80vh;
+    .gradient {
+      max-height: 100vh;
+    }
+  }
   .hero {
     .text {
       flex-direction: column;
@@ -68,18 +74,22 @@ $purple: rgba(89, 43, 130, 1);
         }
       }
       .right-side {
-        padding: 7vh 0 0 0;
+        padding-bottom: 20rem;
+        display: flex;
+        align-items: flex-end;
+        padding-left: 0;
+        padding-bottom: 0;
       }
     }
     h1 {
-      font-size: 8.5vw;
+      font-size: 6vw;
     }
     h3 {
-      font-size: 4vw;
+      font-size: 3vw;
     }
     p,
     li {
-      font-size: 4vw;
+      font-size: 3vw;
     }
   }
 
@@ -92,8 +102,13 @@ $purple: rgba(89, 43, 130, 1);
     padding-right: 5vw;
     padding-top: 2vh;
   }
-  .welcomeinfo {
-    padding-bottom: 3vh;
+  .welcome {
+    .welcomeinfo {
+      padding-bottom: 2vh;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-bottom: 5vh;
+    }
   }
 
   .group-img {
@@ -107,13 +122,23 @@ $purple: rgba(89, 43, 130, 1);
         padding-top: 5rem;
         padding-bottom: 3rem;
       }
+      .info-text {
+        .card {
+          margin: auto;
+          margin-bottom: 3rem;
+        }
+      }
     }
 
     .students {
       flex-direction: column;
+      flex: 1 1 25rem;
       h2 {
-        padding-top: 5rem;
+        padding-top: 7rem;
         padding-bottom: 3rem;
+      }
+      .y-flip-card {
+        height: 5vh;
       }
     }
   }
@@ -132,5 +157,132 @@ $purple: rgba(89, 43, 130, 1);
   }
 }
 
+@media screen and (max-width: 700px) {
+  //Home
+  .background-image {
+    max-height: 80vh;
+  }
+  .hero {
+    .text {
+      .left-side {
+        margin-top: 6vh;
+      }
+      .right-side {
+        padding-bottom: 20rem;
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+  .hello {
+    padding-right: 10rem;
+    padding-left: 10rem;
+    padding-bottom: 5rem;
+    min-height: 20vh;
+  }
+  .welcome {
+    .welcome-img {
+      flex: 1 1 25rem;
+    }
+    .welcomeinfo {
+      flex: 1 1 17rem;
+      padding: 3rem 5rem;
+      margin: 0;
+    }
+  }
+
+  .info {
+    padding: 3rem 8rem;
+    .group-img {
+      margin-bottom: 3rem;
+      width: 100%;
+    }
+  }
+  //Instructor
+  #stu-title,
+  #prof-title {
+    h2 {
+      font-size: 6vw;
+    }
+  }
+  .main-body {
+    .professionals {
+      #prof-title {
+        padding-top: 3rem;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 500px) {
+  p {
+    font-size: 120%;
+  }
+  h2 {
+    font-size: 200%;
+    text-align: center;
+  }
+  .hero {
+    h1 {
+      font-size: 400%;
+    }
+    h3 {
+      font-size: 200%;
+    }
+  }
+
+  .welcome {
+    .welcome-img {
+      #thisimage {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  nav {
+    align-items: initial;
+    .logo {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  li {
+    font-size: 80%;
+  }
+  .hero {
+    .text {
+      .right-side {
+        flex: 1 1 30rem;
+      }
+    }
+  }
+  .hello {
+    padding: 4rem 5rem;
+  }
+  .welcome {
+    .welcome-img {
+      #thisimage {
+        box-shadow: 10px 10px $purple;
+      }
+    }
+    .welcomeinfo {
+      margin-bottom: 1rem;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+  }
+  .info {
+    padding: 4rem 5rem;
+    li {
+      font-size: 120%;
+    }
+    #crew-image {
+      box-shadow: -10px 10px $purple;
+    }
+  }
 }
