@@ -147,6 +147,22 @@ footer #Orchestra {
   padding-bottom: 2rem;
 }
 
+footer .footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 footer .footer-icons #facebook {
   margin: 0rem 5rem;
   height: 3rem;
@@ -329,7 +345,7 @@ footer .footer-icons #website {
   border-radius: 20px;
   -webkit-box-shadow: -20px 20px #592b82;
           box-shadow: -20px 20px #592b82;
-  width: 130%;
+  width: 120%;
 }
 
 .register-body {
@@ -466,12 +482,6 @@ footer .footer-icons #website {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.main-body .professionals #prof-title {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
 }
 
 .main-body .professionals .info-text {
@@ -881,7 +891,7 @@ footer .footer-icons #website {
   text-align: left;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1145px) {
   .welcome {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -891,8 +901,9 @@ footer .footer-icons #website {
     padding-top: 0;
   }
   .welcome .welcomeinfo {
-    padding: 8vh 15vw 0 15vw;
+    padding: 8vh 15vw 0vh 15vw;
     max-height: 20vh;
+    margin-bottom: 10vh;
   }
   .welcome .welcomeinfo h2 {
     text-align: center;
@@ -927,6 +938,9 @@ footer .footer-icons #website {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 5rem;
+            flex: 1 1 5rem;
   }
   nav ul a {
     font-size: 175%;
@@ -942,7 +956,7 @@ footer .footer-icons #website {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 20rem;
             flex: 1 1 20rem;
-    padding-top: 8vh;
+    padding-top: 15vh;
   }
   .hero .text .left-side #TitleTextTop,
   .hero .text .left-side #TitleTextBottom,
@@ -963,43 +977,46 @@ footer .footer-icons #website {
     font-size: 4vw;
   }
   .hello {
-    padding: 0 5vh 0 5vh;
-  }
-  .welcomeinfo {
-    padding: 0vh 0vw 0vh 0vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
   .info {
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 2vh;
   }
-}
-
-@media screen and (max-width: 1045px) {
-  .professionals {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .welcomeinfo {
+    padding-bottom: 3vh;
+  }
+  .group-img {
+    width: 80%;
+  }
+  .main-body .professionals {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .professionals #prof-title {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 40rem;
-            flex: 1 1 40rem;
+  .main-body .professionals #prof-title {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
   }
-  .professionals .info-text {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 40rem;
-            flex: 1 1 40rem;
+  .main-body .students {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-body .students h2 {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+  .footer-icons a #facebook,
+  .footer-icons a #website {
+    margin: 0rem;
+  }
+  .footer-icons a #website {
+    margin-left: 5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

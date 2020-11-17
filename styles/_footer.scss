@@ -15,6 +15,7 @@ footer {
     padding-bottom: 2rem;
   }
   .footer-icons {
+    @include flex(center, flex-end, row);
     #facebook {
       margin: 0rem 5rem;
       height: 3rem;
