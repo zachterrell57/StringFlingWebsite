@@ -147,6 +147,22 @@ footer #Orchestra {
   padding-bottom: 2rem;
 }
 
+footer .footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 footer .footer-icons #facebook {
   margin: 0rem 5rem;
   height: 3rem;
@@ -329,7 +345,7 @@ footer .footer-icons #website {
   border-radius: 20px;
   -webkit-box-shadow: -20px 20px #592b82;
           box-shadow: -20px 20px #592b82;
-  width: 130%;
+  width: 120%;
 }
 
 .register-body {
@@ -478,12 +494,6 @@ footer .footer-icons #website {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.main-body .professionals #prof-title {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
 }
 
 .main-body .professionals .info-text {
@@ -893,7 +903,7 @@ footer .footer-icons #website {
   text-align: left;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1145px) {
   .welcome {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -903,8 +913,9 @@ footer .footer-icons #website {
     padding-top: 0;
   }
   .welcome .welcomeinfo {
-    padding: 8vh 15vw 0 15vw;
+    padding: 8vh 15vw 0vh 15vw;
     max-height: 20vh;
+    margin-bottom: 10vh;
   }
   .welcome .welcomeinfo h2 {
     text-align: center;
@@ -939,10 +950,19 @@ footer .footer-icons #website {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 5rem;
+            flex: 1 1 5rem;
   }
   nav ul a {
     font-size: 175%;
     margin: 0;
+  }
+  .background-image {
+    max-height: 80vh;
+  }
+  .background-image .gradient {
+    max-height: 100vh;
   }
   .hero .text {
     -webkit-box-orient: vertical;
@@ -954,7 +974,7 @@ footer .footer-icons #website {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 20rem;
             flex: 1 1 20rem;
-    padding-top: 8vh;
+    padding-top: 15vh;
   }
   .hero .text .left-side #TitleTextTop,
   .hero .text .left-side #TitleTextBottom,
@@ -962,56 +982,194 @@ footer .footer-icons #website {
     padding: 0;
   }
   .hero .text .right-side {
-    padding: 7vh 0 0 0;
+    padding-bottom: 20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-left: 0;
+    padding-bottom: 0;
   }
   .hero h1 {
-    font-size: 8.5vw;
+    font-size: 6vw;
   }
   .hero h3 {
-    font-size: 4vw;
+    font-size: 3vw;
   }
   .hero p,
   .hero li {
-    font-size: 4vw;
+    font-size: 3vw;
   }
   .hello {
-    padding: 0 5vh 0 5vh;
-  }
-  .welcomeinfo {
-    padding: 0vh 0vw 0vh 0vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
   .info {
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 2vh;
   }
-}
-
-@media screen and (max-width: 1045px) {
-  .professionals {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .welcome .welcomeinfo {
+    padding-bottom: 2vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 5vh;
+  }
+  .group-img {
+    width: 80%;
+  }
+  .main-body .professionals {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .professionals #prof-title {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 40rem;
-            flex: 1 1 40rem;
+  .main-body .professionals #prof-title {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
   }
-  .professionals .info-text {
+  .main-body .professionals .info-text .card {
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+  .main-body .students {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 40rem;
-            flex: 1 1 40rem;
+        -ms-flex: 1 1 25rem;
+            flex: 1 1 25rem;
+  }
+  .main-body .students h2 {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+  }
+  .main-body .students .y-flip-card {
+    height: 5vh;
+  }
+  .footer-icons a #facebook,
+  .footer-icons a #website {
+    margin: 0rem;
+  }
+  .footer-icons a #website {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .background-image {
+    max-height: 80vh;
+  }
+  .hero .text .left-side {
+    margin-top: 6vh;
+  }
+  .hero .text .right-side {
+    padding-bottom: 20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .hello {
+    padding-right: 10rem;
+    padding-left: 10rem;
+    padding-bottom: 5rem;
+    min-height: 20vh;
+  }
+  .welcome .welcome-img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 25rem;
+            flex: 1 1 25rem;
+  }
+  .welcome .welcomeinfo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 17rem;
+            flex: 1 1 17rem;
+    padding: 3rem 5rem;
+    margin: 0;
+  }
+  .info {
+    padding: 3rem 8rem;
+  }
+  .info .group-img {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+  #stu-title h2,
+  #prof-title h2 {
+    font-size: 6vw;
+  }
+  .main-body .professionals #prof-title {
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  p {
+    font-size: 120%;
+  }
+  h2 {
+    font-size: 200%;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 400%;
+  }
+  .hero h3 {
+    font-size: 200%;
+  }
+  .welcome .welcome-img #thisimage {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  nav {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+  nav .logo {
+    width: 100%;
+  }
+  nav .logo img {
+    width: 100%;
+  }
+  li {
+    font-size: 80%;
+  }
+  .hero .text .right-side {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30rem;
+            flex: 1 1 30rem;
+  }
+  .hello {
+    padding: 4rem 5rem;
+  }
+  .welcome .welcome-img #thisimage {
+    -webkit-box-shadow: 10px 10px #592b82;
+            box-shadow: 10px 10px #592b82;
+  }
+  .welcome .welcomeinfo {
+    margin-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .info {
+    padding: 4rem 5rem;
+  }
+  .info li {
+    font-size: 120%;
+  }
+  .info #crew-image {
+    -webkit-box-shadow: -10px 10px #592b82;
+            box-shadow: -10px 10px #592b82;
   }
 }
 /*# sourceMappingURL=style.css.map */
