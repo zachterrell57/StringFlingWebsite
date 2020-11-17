@@ -48,7 +48,7 @@
 
 .welcome {
   min-height: 30vh;
-  padding: 6rem 15rem;
+  padding: 6rem 15vw;
   @include flex(space-between, center, row);
   flex-wrap: wrap;
   .welcomeinfo {
@@ -68,7 +68,7 @@
 }
 
 .info {
-  padding: 8rem 15rem;
+  padding: 8rem 15vw;
 
   @include flex(center, center, column);
   ul {

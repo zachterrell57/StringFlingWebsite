@@ -244,7 +244,7 @@ footer .footer-icons #website {
 
 .welcome {
   min-height: 30vh;
-  padding: 6rem 15rem;
+  padding: 6rem 15vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,7 +284,7 @@ footer .footer-icons #website {
 }
 
 .info {
-  padding: 8rem 15rem;
+  padding: 8rem 15vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -958,8 +958,48 @@ footer .footer-icons #website {
   .hero h3 {
     font-size: 4vw;
   }
+  .hero p,
+  .hero li {
+    font-size: 4vw;
+  }
   .hello {
-    padding: 0;
+    padding: 0 5vh 0 5vh;
+  }
+  .welcomeinfo {
+    padding: 0vh 0vw 0vh 0vw;
+  }
+  .info {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vh;
+  }
+}
+
+@media screen and (max-width: 1045px) {
+  .professionals {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .professionals #prof-title {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
+  }
+  .professionals .info-text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

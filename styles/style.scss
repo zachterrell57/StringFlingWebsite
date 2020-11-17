@@ -20,6 +20,8 @@ $purple: rgba(89, 43, 130, 1);
 @import "_instructors";
 @import "_schedule";
 
+// Home Responsiveness//
+
 @media screen and (max-width: 1100px) {
   .welcome {
     flex-direction: column;
@@ -67,14 +69,45 @@ $purple: rgba(89, 43, 130, 1);
         padding: 7vh 0 0 0;
       }
     }
+  }
+  .hero {
     h1 {
       font-size: 8.5vw;
     }
     h3 {
       font-size: 4vw;
     }
+    p,
+    li {
+      font-size: 4vw;
+    }
   }
   .hello {
-    padding: 0;
+    padding: 0 5vh 0 5vh;
+  }
+  .welcomeinfo {
+    padding: 0vh 0vw 0vh 0vw;
+  }
+  .info {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vh;
+  }
+  h2 {
+    //font-size: 5vw;
+  }
+}
+
+//Instructors Responsiveness
+
+@media screen and (max-width: 1045px) {
+  .professionals {
+    @include flex(space-between, center, column);
+    #prof-title {
+      flex: 1 1 40rem;
+    }
+    .info-text {
+      flex: 1 1 40rem;
+    }
   }
 }
