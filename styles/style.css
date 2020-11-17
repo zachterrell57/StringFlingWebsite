@@ -906,9 +906,18 @@ footer .footer-icons #website {
 }
 
 @media screen and (max-width: 1420px) {
-  .schedule-nav {
+  #schedule-home-nav nav .schedule-nav {
     color: white;
-    border-color: white;
+  }
+  #schedule-nav {
+    display: absolute;
+  }
+  #schedule-nav nav {
+    display: absolute;
+  }
+  #schedule-nav nav .schedule-nav {
+    color: white;
+    display: absolute;
   }
   #schedule-selected {
     padding-bottom: 0.5rem;
@@ -927,7 +936,7 @@ footer .footer-icons #website {
             flex-direction: row;
     width: 100%;
     min-height: 30vh;
-    padding-bottom: 7vh;
+    padding-top: 13rem;
   }
   .schedule-page .buttons .grade-buttons {
     display: -webkit-box;
@@ -960,6 +969,14 @@ footer .footer-icons #website {
 }
 
 @media screen and (max-width: 1145px) {
+  nav ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  nav ul a {
+    margin: 0;
+  }
   .welcome {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1076,11 +1093,22 @@ footer .footer-icons #website {
   .group-img {
     width: 80%;
   }
-  .schedule-nav {
-    position: relative;
-  }
   .schedule-page .buttons {
-    padding-top: 30rem;
+    min-height: 35vh;
+    padding-top: 25rem;
+  }
+  .schedule-page .events .headers h2 {
+    font-size: 500%;
+  }
+  .schedule-page .events .event-box .times {
+    width: 15vw;
+  }
+  .schedule-page .events .event-box .times h3,
+  .schedule-page .events .event-box .times h4 {
+    font-size: 250%;
+  }
+  .schedule-page .events .event-box .event-button {
+    font-size: 300%;
   }
   .main-body .professionals {
     -webkit-box-orient: vertical;
@@ -1112,12 +1140,49 @@ footer .footer-icons #website {
   .main-body .students .y-flip-card {
     height: 5vh;
   }
+  .register-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .register-body h1 {
+    text-align: center;
+  }
   .footer-icons a #facebook,
   .footer-icons a #website {
     margin: 0rem;
   }
   .footer-icons a #website {
     margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  h2 {
+    font-size: 600%;
+  }
+  .buttons a {
+    font-size: 250%;
+  }
+  .schedule-page .events .horizontal-square {
+    display: none;
+  }
+  .schedule-page .events .vertical-square {
+    border: 0;
+    width: 80%;
+    background-image: url(../img/kLogoLight.png);
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -1162,6 +1227,13 @@ footer .footer-icons #website {
     margin-bottom: 3rem;
     width: 100%;
   }
+  .schedule-page .buttons {
+    min-height: 45vh;
+    padding-top: 22rem;
+  }
+  .schedule-page .buttons .grade-buttons {
+    min-height: 13rem;
+  }
   #stu-title h2,
   #prof-title h2 {
     font-size: 6vw;
@@ -1187,6 +1259,15 @@ footer .footer-icons #website {
   }
   .welcome .welcome-img #thisimage {
     width: 100%;
+  }
+  .schedule-page .events {
+    min-height: 40vh;
+    margin: 0;
+    padding: 0;
+  }
+  .schedule-page .events .vertical-square {
+    background-size: 0 0;
+    font-size: 300%;
   }
 }
 
@@ -1232,6 +1313,18 @@ footer .footer-icons #website {
   .info #crew-image {
     -webkit-box-shadow: -10px 10px #592b82;
             box-shadow: -10px 10px #592b82;
+  }
+  .schedule-page .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 80vh;
+    padding-top: 15rem;
+  }
+  .schedule-page .buttons .grade-buttons {
+    min-height: 5rem;
+    min-width: 80vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

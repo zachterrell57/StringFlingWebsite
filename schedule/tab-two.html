@@ -162,8 +162,10 @@
       </div>
     </footer>
     <script>
-      var div = document.querySelector(".events");
-      var prevScrollpos = div.scrollTop;
+      if (window.outerWidth > 1420) {
+        var div = document.querySelector(".events");
+        var prevScrollpos = div.scrollTop;
+      }
       div.onscroll = function () {
         var currentScrollPos = div.scrollTop;
         if (prevScrollpos > currentScrollPos) {
