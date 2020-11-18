@@ -30,6 +30,9 @@ $purple: rgba(89, 43, 130, 1);
     }
     .welcome-img {
       @include flex(center, center, row);
+      #thisimage {
+        box-shadow: 10px 10px $purple;
+      }
     }
     padding-top: 2vh;
   }

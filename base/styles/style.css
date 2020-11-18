@@ -177,7 +177,7 @@ footer .footer-icons #website {
 
 .background-image {
   min-height: 100vh;
-  background-image: url("../img/Anderson.png");
+  background-image: url("../img/Anderson.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -941,6 +941,10 @@ footer .footer-icons #website {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .welcome .welcome-img #thisimage {
+    -webkit-box-shadow: 10px 10px #592b82;
+            box-shadow: 10px 10px #592b82;
   }
 }
 
