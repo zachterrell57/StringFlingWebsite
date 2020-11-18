@@ -177,7 +177,7 @@ footer .footer-icons #website {
 
 .background-image {
   min-height: 100vh;
-  background-image: url("./img/Anderson.png");
+  background-image: url("../img/Anderson.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
