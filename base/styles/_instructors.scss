@@ -7,11 +7,11 @@
 
   .professionals {
     width: 100%;
-    flex: 1 0 40rem;
+    flex: 0 0 auto;
     @include flex(space-between, center, row);
 
     .info-text {
-      flex: 1 0 40rem;
+      flex: 0 0 auto;
 
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
