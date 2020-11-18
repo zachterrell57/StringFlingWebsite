@@ -24,8 +24,6 @@
         .front,
         .back {
           @include flex(space-between, center, column);
-          display: -ms-flexbox;
-          display: -webkit-flex;
           text-align: center;
           flex: 1 1 25rem;
           border-radius: 20px;
@@ -124,8 +122,6 @@
     flex: 1 1 40rem;
     width: 100%;
     @include flex(space-between, center, row);
-    display: -ms-flexbox;
-    display: -webkit-flex;
     #stu-title {
       flex: 0 0 30%;
     }
