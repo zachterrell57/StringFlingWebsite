@@ -241,21 +241,20 @@
       });
     </script> -->
     <script>
-      $(".card").flip({
-        axis: "y",
-        trigger: "hover",
-        speed: "1000",
-      });
-      // if (!!("ontouchstart" in window)) {
-      //   alert("Tap on any card to read a bio!");
-      //   $(".card").flip({
-      //     axis: "y",
-      //     trigger: "tap",
-      //     speed: "1000",
-      //   });
-      // } else {
-
-      // }
+      if (!!("ontouchstart" in window)) {
+        alert("Tap on any card to read a bio!");
+        $(".card").flip({
+          axis: "y",
+          trigger: "tap",
+          speed: "1000",
+        });
+      } else {
+        $(".card").flip({
+          axis: "y",
+          trigger: "hover",
+          speed: "1000",
+        });
+      }
     </script>
   </body>
 </html>
