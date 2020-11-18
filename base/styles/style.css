@@ -279,7 +279,7 @@ footer .footer-icons #website {
 }
 
 .welcome .welcomeinfo {
-  padding-left: 8rem;
+  padding-right: 8rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
@@ -926,6 +926,7 @@ footer .footer-icons #website {
   }
   .welcome .welcomeinfo {
     margin-bottom: 2vh;
+    padding-right: 0vh;
   }
   .welcome .welcome-img {
     display: -webkit-box;
@@ -1158,7 +1159,7 @@ footer .footer-icons #website {
     padding-bottom: 2vh;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-bottom: 5vh;
+    margin-bottom: 1vh;
   }
   .group-img {
     width: 80%;
@@ -1249,18 +1250,6 @@ footer .footer-icons #website {
     padding-left: 10rem;
     padding-bottom: 5rem;
     min-height: 20vh;
-  }
-  .welcome .welcome-img {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 25rem;
-            flex: 1 1 25rem;
-  }
-  .welcome .welcomeinfo {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 17rem;
-            flex: 1 1 17rem;
-    padding: 3rem 5rem;
-    margin: 0;
   }
   .info {
     padding: 3rem 8rem;

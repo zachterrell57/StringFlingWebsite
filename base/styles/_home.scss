@@ -52,7 +52,7 @@
   @include flex(space-between, center, row);
   flex-wrap: wrap;
   .welcomeinfo {
-    padding-left: 8rem;
+    padding-right: 8rem;
     flex: 1 1 40rem;
   }
   .welcome-img {
