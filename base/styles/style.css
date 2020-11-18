@@ -348,6 +348,19 @@ footer .footer-icons #website {
   width: 120%;
 }
 
+.register-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (1fr)[2] 30vh;
+      grid-template-rows: repeat(2, 1fr) 30vh;
+      grid-template-areas: "text1 pic1" "pic2 text2" "regButton regButton";
+  min-height: 83vh;
+  position: relative;
+  overflow: hidden;
+}
+
 .register-body .string-fling-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,6 +379,8 @@ footer .footer-icons #website {
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
   padding-top: 4vh;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: pic1;
 }
 
@@ -376,6 +391,8 @@ footer .footer-icons #website {
 }
 
 .register-body .register-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: text1;
   padding-right: 1vw;
   padding-left: 7vw;
@@ -397,6 +414,8 @@ footer .footer-icons #website {
 }
 
 .register-body .register-online-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: text2;
   padding: 0 8vh;
 }
@@ -404,6 +423,8 @@ footer .footer-icons #website {
 .register-body .bigOrchestra-img {
   -webkit-transform: translateX(-9vw);
           transform: translateX(-9vw);
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: pic2;
 }
 
@@ -416,6 +437,9 @@ footer .footer-icons #website {
 }
 
 .register-body .register-button {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: regButton;
   border-radius: 20px;
   margin: 10vh 35vw;
@@ -985,6 +1009,8 @@ footer .footer-icons #website {
     -webkit-transform: translateX(0vw);
             transform: translateX(0vw);
     padding: 2vh, 0;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: pic2;
     display: -webkit-box;
     display: -ms-flexbox;

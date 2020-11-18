@@ -1,14 +1,14 @@
 .register-body {
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
-  // grid-template-rows: repeat(2, 1fr) 30vh;
-  // grid-template-areas:
-  //   "text1 pic1"
-  //   "pic2 text2"
-  //   "regButton regButton";
-  // min-height: 83vh;
-  // position: relative;
-  // overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr) 30vh;
+  grid-template-areas:
+    "text1 pic1"
+    "pic2 text2"
+    "regButton regButton";
+  min-height: 83vh;
+  position: relative;
+  overflow: hidden;
   .string-fling-img {
     @include flex(center, center, column);
     justify-self: center;
