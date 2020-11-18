@@ -490,9 +490,9 @@ footer .footer-icons #website {
 
 .main-body .professionals {
   width: 100%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 40rem;
-          flex: 0 1 40rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40rem;
+          flex: 1 0 40rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,9 +509,9 @@ footer .footer-icons #website {
 }
 
 .main-body .professionals .info-text {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 40rem;
-          flex: 0 1 40rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40rem;
+          flex: 1 0 40rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
