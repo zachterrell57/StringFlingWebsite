@@ -641,9 +641,9 @@ footer .footer-icons #website {
 }
 
 .main-body .students {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

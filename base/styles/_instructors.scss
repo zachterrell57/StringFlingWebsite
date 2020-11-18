@@ -119,7 +119,7 @@
   }
 
   .students {
-    flex: 1 1 40rem;
+    flex: 0 0 auto;
     width: 100%;
     @include flex(space-between, center, row);
     #stu-title {
