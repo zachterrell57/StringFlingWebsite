@@ -20,6 +20,21 @@ $purple: rgba(89, 43, 130, 1);
 @import "_instructors";
 @import "_schedule";
 
+@media screen and (max-width: 1145px) {
+  .welcome {
+    h2 {
+      text-align: center;
+    }
+    .welcomeinfo {
+      margin-bottom: 2vh;
+    }
+    .welcome-img {
+      @include flex(center, center, row);
+    }
+    padding-top: 2vh;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   #schedule-home-nav {
     nav {
@@ -254,7 +269,7 @@ $purple: rgba(89, 43, 130, 1);
 
 @media screen and (max-width: 850px) {
   h2 {
-    font-size: 600%;
+    //font-size: 600%;
   }
   .buttons {
     a {
