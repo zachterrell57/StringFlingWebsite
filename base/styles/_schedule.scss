@@ -15,7 +15,7 @@
   flex-wrap: wrap;
   .buttons {
     @include flex(space-evenly, center, column);
-    flex: 1 1 5rem;
+    flex: 0 0 5rem;
     min-height: 100vh;
     width: 30.9vw;
     padding-top: 20vh;
@@ -93,7 +93,7 @@
 
     .event-box {
       @include flex(space-between, center, row);
-      flex: 1 1 9rem;
+      flex: 0 0 auto;
       flex-wrap: wrap;
       margin: 2rem;
       .times {
