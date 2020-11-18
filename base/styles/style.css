@@ -641,9 +641,9 @@ footer .footer-icons #website {
 }
 
 .main-body .students {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1170,6 +1170,7 @@ footer .footer-icons #website {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 50vh;
   }
   .main-body .students h2 {
     padding-top: 7rem;
