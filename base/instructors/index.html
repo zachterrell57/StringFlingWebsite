@@ -243,12 +243,12 @@
     </script> -->
     <script>
       if (!!("ontouchstart" in window)) {
-        alert("Tap on any card to read a bio!");
         $(".card").flip({
           axis: "y",
           trigger: "click",
           speed: "1000",
         });
+        alert("Tap on any card to read a bio!");
       } else {
         $(".card").flip({
           axis: "y",
