@@ -417,7 +417,7 @@ footer .footer-icons #website {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: text2;
-  padding: 0 8vh;
+  padding: 0 4vh;
 }
 
 .register-body .bigOrchestra-img {
